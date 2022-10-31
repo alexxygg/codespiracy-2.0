@@ -1,0 +1,30 @@
+<% layout("./layouts/boilerplate") %>
+  <link rel="stylesheet" href="idSelector.css" />
+
+  <h1>id Selector</h1>
+  <p>
+    The id selector helps us style a specific element from our HTML, which we
+    must have identified as an id beforehand.
+  </p>
+  <p>
+    It is important to note that there can only be one id with the same name
+    per HTML page.
+  </p>
+  <p>Here we have 5 buttons, the third one has an id called third.</p>
+  <p>That code has been left as a comment below this paragraph.</p>
+  <!--<button id="third">I´m the 3rd button!</button>-->
+  <p>
+    We used this code to style that specific button's background-color: #third
+    { background-color: sienna; }
+  </p>
+  <p>
+    Notice that since it is an id, it needs a hashtag before the name of the
+    id when styling on our CSS page.
+  </p>
+  <div id="buttonDiv">
+    <button>I'm the 1st button!</button>
+    <button>I'm the 2nd button!</button>
+    <button id="third">I'm the 3rd button!</button>
+    <button>I'm the 4th button!</button>
+    <button>I'm the 5th button!</button>
+  </div>

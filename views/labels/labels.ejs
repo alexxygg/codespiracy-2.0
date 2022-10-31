@@ -1,0 +1,45 @@
+<% layout("./layouts/boilerplate") %>
+  <h1>Labels</h1>
+  <p>
+    Labels are used to associate an input to a text. They connect and prompt
+    you to type when clicked on.
+  </p>
+  <p>
+    We also need to give the input an ID to link them, making it easier to
+    style them with CSS in the future if needed.
+  </p>
+  <p>
+    The prompt text is entered between the label elements, but outside of the
+    input. The placeholders can be different.
+  </p>
+  <hr />
+  <p>The id here is username, which is set inside the input element.</p>
+  <div id="buttonDiv">
+    <label for="username">Enter your username:
+      <input type="text" placeholder="username" id="username" />
+    </label>
+
+  </div>
+  <hr />
+  <p>The id here is color.</p>
+  <div id="buttonDiv">
+    <label for="color">Choose a color:
+      <input type="color" id="color" />
+    </label>
+
+  </div>
+  <hr />
+  <p>The id here is password.</p>
+  <div id="buttonDiv">
+    <label for="password">Enter your password:
+      <input type="password" placeholder="password" id="password" />
+    </label>
+
+  </div>
+  <hr />
+  <p>The id here is number.</p>
+  <div id="buttonDiv">
+    <label for="number">Choose your favorite number:
+      <input type="number" placeholder="number" id="number" />
+    </label>
+  </div>

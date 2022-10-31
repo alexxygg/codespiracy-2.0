@@ -1,0 +1,42 @@
+<% layout("./layouts/boilerplate") %>
+  <link rel="stylesheet" href="inheritance.css" />
+
+  <h1>Inheritance</h1>
+  <p>
+    This means that when we are not specific when styling, the elements inside
+    whatever we styled will inherit those values.
+  </p>
+  <p>
+    Here we have a form with 3 buttons inside it, each with its own label.
+  </p>
+  <div id="buttonDiv">
+    <form action="">
+      <label for="a">A</label>
+      <button>A</button>
+      <label for="b">A</label>
+      <button>B</button>
+      <label for="c">A</label>
+      <button>C</button>
+    </form>
+  </div>
+  <p>
+    Not the form, labels or buttons were styled, only the body. Since all of
+    these elements are inside the body, they have inherited the color
+    darkgreen from it.
+  </p>
+  <p>This was all the code: body { color: darkgreen; }</p>
+  <div>
+    <p>
+      This paragraph is inside a div, which we styled with this code: div p {
+      color: darkblue; }
+    </p>
+  </div>
+  <p>The rest of the content is still dark green, but not that one!</p>
+  <p>
+    There is a property we can set for any element, class or id called
+    inherit, it inherits the styles of the nearest parent.
+  </p>
+  <p>
+    Not every element will inherit every property, and not all properties are
+    inheritable.
+  </p>

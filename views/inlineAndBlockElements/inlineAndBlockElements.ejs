@@ -1,0 +1,65 @@
+<% layout("./layouts/boilerplate") %>
+  <link rel="stylesheet" href="inlineAndBlockElements.css" />
+
+  <h1>Inline and Block Elements</h1>
+  <p id="p">We have seen inline elements before, and also inline elements.</p>
+  <h3 id="h3">This h3 header is a block-level element by default.</h3>
+  <div id="div">
+    <p id="p">So is this paragraph.</p>
+  </div>
+  <p id="p">These next elements are inline-level elements.</p>
+  <button id="button">We are inline-leveled.</button><button id="button">We are inline-leveled.</button><button
+    id="button">We are inline-leveled.</button>
+  <p id="p">
+    But we can change this by using the display option. Here we have two h2
+    headers.
+  </p>
+  <h2 id="h2">I have been changed to be inline.</h2>
+  <h2 id="h2">I have been changed to be inline.</h2>
+  <p id="p">And also three buttons changed to block-level.</p>
+  <div id="buttonDiv" class="div">
+    <button id="button" class="blocked">I have been changed to block-level.</button>
+    <button id="button" class="blocked">I have been changed to block-level.</button>
+    <button id="button" class="blocked">I have been changed to block-level.</button>
+  </div>
+  <p id="p">
+    These buttons occupy the whole row, Even though they could technically all
+    fit in one line.
+  </p>
+
+  <h4>Inline</h4>
+  <p id="p">
+    The inline elements have
+    <span class="bad"> width and height ignored.</span>
+  </p>
+  <p id="p">
+    <span class="neutral"> Margin and padding </span>push elements away to the
+    <span class="good"> left and right</span>,
+    <span class="bad"> but up and down is ignored.</span>
+  </p>
+  <h4>Block</h4>
+  <p id="p">
+    <span class="neutral"> Width, height, margin and padding</span>
+    <span class="good"> are respected.</span>
+  </p>
+  <h4>Inline-Block</h4>
+  <p id="p">
+    This one behaves like an inline element, except that
+    <span class="good"> width, height, margin and padding </span><span class="good"> are respected!.</span>
+  </p>
+  <hr />
+  <p id="p">
+    Here are 3 divs, all 50px on all sides and with a 5px black border each.
+  </p>
+  <p id="p">
+    They are taking the whole space from left to right because they are
+    block-level elements.
+  </p>
+  <div id="div" class="normaldivs">Hi</div>
+  <div id="div" class="normaldivs">Hello</div>
+  <div id="div" class="normaldivs">:)</div>
+  <p id="p">Here we have the same divs, but we set the display to inline-block.</p>
+  <div id="div" class="inlineblockdivs">Hi</div>
+  <div id="div" class="inlineblockdivs">Hello</div>
+  <div id="div" class="inlineblockdivs">:)</div>
+  <p id="p">Also setting display to none will hide an element from our page!</p>

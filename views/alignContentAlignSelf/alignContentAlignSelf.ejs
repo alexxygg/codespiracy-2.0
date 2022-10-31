@@ -1,0 +1,82 @@
+<% layout("./layouts/boilerplate") %>
+  <link rel="stylesheet" href="alignContentAlignSelf.css" />
+
+  <h1>align-content and align-self</h1>
+  <p>
+    This helps us align the content when wrap or wrap-reverse is enabled.
+  </p>
+  <hr />
+  <h1>align-content</h1>
+  <h2>NO align-content.</h2>
+  <p>justify-content: center and align-items:flex-end ONLY.</p>
+  <div id="buttonDiv">
+    <section class="section" id="noaligncontent">
+      <div id="div">1</div>
+      <div id="div">2</div>
+      <div id="div">3</div>
+      <div id="div">4</div>
+      <div id="div">5</div>
+    </section>
+  </div>
+  <hr />
+  <h2>align-content: center</h2>
+  <p>Same but with align-content: center.(Which needs flex-wrap)</p>
+  <div id="buttonDiv">
+    <section class="section" id="aligncontentcenter">
+      <div id="div">1</div>
+      <div id="div">2</div>
+      <div id="div">3</div>
+      <div id="div">4</div>
+      <div id="div">5</div>
+    </section>
+  </div>
+  <hr />
+  <h2>align-content: flex-start</h2>
+  <div id="buttonDiv">
+    <section class="section" id="aligncontentstart">
+      <div id="div">1</div>
+      <div id="div">2</div>
+      <div id="div">3</div>
+      <div id="div">4</div>
+      <div id="div">5</div>
+    </section>
+  </div>
+  <hr />
+  <p>
+    Here they were set to justify-content: space-evenly and align-items:center
+  </p>
+  <h2>align-content: center;</h2>
+  <div id="buttonDiv">
+    <section class="section" id="accenter">
+      <div id="div">1</div>
+      <div id="div">2</div>
+      <div id="div">3</div>
+      <div id="div">4</div>
+      <div id="div">5</div>
+    </section>
+  </div>
+  <hr />
+  <h2>align-content: flex-start;</h2>
+  <div id="buttonDiv">
+    <section class="section" id="acstart">
+      <div id="div">1</div>
+      <div id="div">2</div>
+      <div id="div">3</div>
+      <div id="div">4</div>
+      <div id="div">5</div>
+    </section>
+  </div>
+  <hr />
+  <h1>align-self</h1>
+  <p>And this one helps us align single elements.</p>
+  <p>Div 1 is using align-self: flex-start.</p>
+  <p>Div 3 is using align-self: center.</p>
+  <div id="buttonDiv">
+    <section class="section" id="noaligncontent">
+      <div id="div" class="alignselfstart">1</div>
+      <div id="div">2</div>
+      <div id="div" class="alignselfcenter">3</div>
+      <div id="div">4</div>
+      <div id="div">5</div>
+    </section>
+  </div>

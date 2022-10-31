@@ -1,0 +1,109 @@
+<% layout("./layouts/boilerplate") %>
+  <link rel="stylesheet" href="flexBasisGrowShrink.css" />
+
+
+  <h1>FLEX basis, grow and shrink</h1>
+  <p>These help us with proportions of leftover content or space.</p>
+  <p>This is the shorthand:</p>
+  <h3>One value, unitless number: flex-grow</h3>
+
+  <p>flex-basis is then equal to 0.</p>
+  <p>flex: 2;</p>
+
+  <h3>One value, width/height: flex-basis</h3>
+  <p>flex: 10em;</p>
+  <p>flex: 30%;</p>
+  <p>flex: min-content;</p>
+
+  <h3>Two values: flex-grow | flex-basis</h3>
+  <p>flex: 1 30px;</p>
+
+  <h3>Two values: flex-grow | flex-shrink</h3>
+  <p>flex: 2 2;</p>
+
+  <h3>Three values: flex-grow | flex-shrink | flex-basis</h3>
+  <p>flex: 2 2 10%;</p>
+  <h2>flex basis</h2>
+  <p>
+    Here basis helps us take the space left by turning each div into 200px in
+    width. It works the same way if working with a column, except it would
+    alter the height.
+  </p>
+  <p>flex-basis: 200px;</p>
+  <section class="section" id="flexbasis">
+    <div id="div">1</div>
+    <div id="div">2</div>
+    <div id="div">3</div>
+    <div id="div">4</div>
+    <div id="div">5</div>
+  </section>
+  <h2>flex grow</h2>
+  <p>Here we gave the second div a flex-grow: 1</p>
+  <p>
+    1 is 1005 of the available space, so all other divs have their original
+    width, and div 2 has the rest of the row. It works the same for a column,
+    except again with height.
+  </p>
+  <section class="section" id="flexgrow">
+    <div id="div">1</div>
+    <div id="div">2</div>
+    <div id="div">3</div>
+    <div id="div">4</div>
+    <div id="div">5</div>
+  </section>
+  <hr />
+  <p>
+    If we give a value of flex-grow: 1 to multiple divs, they will share it
+    equally between them.
+  </p>
+  <p>Here div 2 and 5 have flex-grow: 1</p>
+  <section class="section" id="flexgrowtwo">
+    <div id="div">1</div>
+    <div id="div">2</div>
+    <div id="div">3</div>
+    <div id="div">4</div>
+    <div id="div">5</div>
+  </section>
+  <hr />
+  <p>And we can play with the ratios as we wish!</p>
+  <p>
+    Here div one has a ratio of 1, div 2 has a ratio of 2 and div 3 has a
+    ratio of 3.
+  </p>
+  <p>
+    The space left over was divided in 6, 1 part for div 1, 2 for div 2 and 3
+    for div 3.
+  </p>
+  <section class="section" id="flexgrowonetwothree">
+    <div id="div">1</div>
+    <div id="div">2</div>
+    <div id="div">3</div>
+    <div id="div">4</div>
+    <div id="div">5</div>
+  </section>
+  <hr />
+
+  <h2>flex shrink</h2>
+  <p>
+    Flex shrink is like grow, but used when we do not have enough space for
+    them to be at their original width or height(as always depending on which
+    axis we are working with, row or column).
+  </p>
+  <p>
+    Here they all have a width of 500px, which is too much for them since the
+    whole screen is less than 2500 px. If it is off, they will divide the
+    space they have in the row equally.
+  </p>
+  <p>
+    Div 3 and 5 have flex-shrink to 2, so they are half the size of the
+    others.
+  </p>
+  <section class="section" id="flexshrink">
+    <div id="div">1</div>
+    <div id="div">2</div>
+    <div id="div">3</div>
+    <div id="div">4</div>
+    <div id="div">5</div>
+  </section>
+  <hr />
+  <p>A flex-shrink of 0 means that that div will not shrink.</p>

@@ -1,0 +1,30 @@
+<% layout("./layouts/boilerplate") %>
+  <title>addEventListener</title>
+
+  <body>
+    <h1>addEventListener</h1>
+    <p>
+      We can use event listeners to pass in 2 arguments, the first is what we
+      are listening for, and the second is the action or callback we want to run
+      when this happens.
+    </p>
+    <img src="addEventListener.png" alt="" />
+    <p></p>
+    <div id="buttonDiv"><button type="button" class="btn1 btn btn-outline-success">Click Me!</button></div>
+    <p>This approach allows us to run multiple callbacks on the same event.</p>
+    <p>
+      WE COULD NOT RUN 2 FUNCTIONS ON THE SAME EVENT BECAUSE THE SECOND WOULD
+      OVERRIDE THE FIRST, LIKE WHEN A CSS STYLE IS DECLARED AT THE END COMPARED
+      TO ONE DECLARED BEFORE IT.(Unless we have both actions declared in a
+      single function.)
+    </p>
+    <p>With addEventListener we CAN include 2 or more functions.</p>
+    <p>There's more flexibility this way, and is much more commonly used.</p>
+    <h2>Another example.</h2>
+    <img src="anotheraddEventListenerExample.png" alt="" />
+    <p></p>
+    <div id="buttonDiv">
+      <button id="hello" type="button" class="btn btn-outline-success">Hello!</button>
+      <button id="goodbye" type="button" class="btn btn-outline-success">Goodbye!</button>
+    </div>
+    <script src="addEventListener.js"></script>

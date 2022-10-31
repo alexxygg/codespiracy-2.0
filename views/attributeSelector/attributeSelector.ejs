@@ -1,0 +1,42 @@
+<% layout("./layouts/boilerplate") %>
+
+  <link rel="stylesheet" href="attributeSelector.css" />
+
+  <h1>Attribute Selector</h1>
+  <p>
+    This selector helps us style specific things in our document using
+    brackets.
+  </p>
+  <p>
+    W could style all the text in a page to yellow using
+    input[type="text"]{color: blue}
+  </p>
+  <p>
+    Below are different input types, like a button, a password box, a text box
+    and an unordered list.
+  </p>
+  <p>We styed the text box input with the previous code mentioned.</p>
+  <div id="buttonDiv"><button>hey</button></div>
+  <div id="buttonDiv">
+    <label for="password">Enter your password:</label>
+    <input type="password" />
+  </div>
+  <div id="buttonDiv">
+    <label for="text">Enter some text:</label>
+    <input type="text" />
+  </div>
+  <ul>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+  </ul>
+  <p>
+    And the last link was styled with : a [href*="www.hello.com"] { color:
+    blueviolet; }
+  </p>
+  <div id="buttonDiv">
+    <a href="">Hello</a>
+    <a href="">Hello</a>
+    <a href="">Hello</a>
+    <a href="www.hello.com" style="color: blueviolet">Google</a>
+  </div>

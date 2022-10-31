@@ -1,0 +1,102 @@
+<% layout("./layouts/boilerplate") %>
+
+  <link rel="stylesheet" href="alignItems.css" />
+
+  <h1>align-items</h1>
+  <p>
+    This property helps us align the items, but it is done on the Y axis,
+    starting at the top and ending in the bottom.
+  </p>
+  <hr />
+  <h2>align-items: center</h2>
+  <p>Here are some divs with display:flex and align-items:center.</p>
+  <section class="section" id="alignitemscenter">
+    <div id="div">1</div>
+    <div id="div">2</div>
+    <div id="div">3</div>
+    <div id="div">4</div>
+    <div id="div">5</div>
+  </section>
+  <hr />
+  <h2>align-items: flex-start</h2>
+
+  <section class="section" id="alignitemsflexstart">
+    <div id="div">1</div>
+    <div id="div">2</div>
+    <div id="div">3</div>
+    <div id="div">4</div>
+    <div id="div">5</div>
+  </section>
+  <hr />
+  <h2>align-items: flex-end</h2>
+
+  <section class="section" id="alignitemsflexend">
+    <div id="div">1</div>
+    <div id="div">2</div>
+    <div id="div">3</div>
+    <div id="div">4</div>
+    <div id="div">5</div>
+  </section>
+  <hr />
+  <h2>align-items: baseline</h2>
+  <p>This one works in relation to the text or content size.</p>
+  <p>We changed the size of the text and divs to see the results.</p>
+  <p>
+    The divs are aligned to have the text in the same line, regardless of the
+    position of each div.
+  </p>
+  <section class="section" id="alignitemsbaseline">
+    <div id="div" class="a">H</div>
+    <div id="div" class="b">E</div>
+    <div id="div" class="c">L</div>
+    <div id="div" class="d">L</div>
+    <div id="div" class="e">O</div>
+  </section>
+  <hr />
+  <h1>justify-content + align-items</h1>
+  <p>
+    Using these together allows us to do a lot more than individually, since
+    we have access to the x and y axis.
+  </p>
+  <hr />
+  <h2>justify-content: center; + align-items: center;</h2>
+  <p>Just a few examples:</p>
+  <p>
+    We centered it from the left and right, and then from top to bottom,
+    leaving it in the exact center.
+  </p>
+  <section class="section" id="centercenter">
+    <div id="div">1</div>
+    <div id="div">2</div>
+    <div id="div">3</div>
+    <div id="div">4</div>
+    <div id="div">5</div>
+  </section>
+  <hr />
+  <h2>justify-content: space-evenly; + align-items: flex-start;</h2>
+  <section class="section" id="spaceevenlystart">
+    <div id="div">1</div>
+    <div id="div">2</div>
+    <div id="div">3</div>
+    <div id="div">4</div>
+    <div id="div">5</div>
+  </section>
+  <hr />
+  <h2>justify-content: space-around; + align-items: flex-end;</h2>
+  <section class="section" id="spacearoundend">
+    <div id="div">1</div>
+    <div id="div">2</div>
+    <div id="div">3</div>
+    <div id="div">4</div>
+    <div id="div">5</div>
+  </section>
+  <hr />
+  <h2>justify-content: center; + align-items: flex-end;</h2>
+  <section class="section" id="centerend">
+    <div id="div">1</div>
+    <div id="div">2</div>
+    <div id="div">3</div>
+    <div id="div">4</div>
+    <div id="div">5</div>
+  </section>
+  <hr />

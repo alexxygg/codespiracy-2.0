@@ -1,0 +1,26 @@
+<% layout("./layouts/boilerplate") %>
+  <link rel="stylesheet" href="flexTest.css" />
+
+  <h1>Flex Demo</h1>
+  <p>flex: grow, shrink, basis</p>
+  <p>#leftpanel { flex: 1 1.5 150px; }</p>
+  <p>#main { flex: 4 1 700px; }</p>
+  <p>#rightpanel { flex: 1 1.5 150px; }</p>
+  <div class="mainOne">
+    <header class="header">
+      <div class="div"></div>
+      <div class="div"></div>
+      <div class="div"></div>
+      <div class="div"></div>
+    </header>
+    <section class="section">
+      <div class="div" id="leftpanel">1</div>
+      <div class="div" id="main">2</div>
+      <div class="div" id="rightpanel">3</div>
+    </section>
+    <footer class="footer">
+      <div class="div"></div>
+      <div class="div"></div>
+      <div class="div"></div>
+    </footer>
+  </div>

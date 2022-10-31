@@ -1,0 +1,47 @@
+<% layout("./layouts/boilerplate") %>
+
+  <h1>Form action=</h1>
+  <p>
+    When creating a form it will ask us to enter something for action, this is
+    where the information entered in our input box will go. THe form
+    submission can go to our own servers, but also to any other website.
+  </p>
+  <p>
+    Here are examples of using the name attribute on other website´s input
+    names to be able to search something from our own page.
+  </p>
+  <hr />
+  <p>
+    Google News uses the letter q for the name of their input on the search
+    bar. The form below has named the input q as well, so anything entered
+    here will search their website.
+  </p>
+  <p>The form action was https://news.google.com/search</p>
+  <hr />
+  <h2>Search Google News!</h2>
+  <div id="buttonDiv">
+    <form action="https://news.google.com/search">
+      <label for="GoogleNewsSearch">Search Google News:
+        <input type="text" id="GoogleNewsSearch" name="q" placeholder="Search" /></label>
+      <button class="btn btn-outline-success">Search Google News</button>
+    </form>
+
+  </div>
+  <hr />
+  <p>
+    Reddit happens to have the same name of q, so again that will be the name
+    for the input we will be using.
+  </p>
+  <p>The form action was https://www.reddit.com/search</p>
+  <hr />
+  <h2>Search for something on Reddit!</h2>
+  <div id="buttonDiv">
+    <form action="https://www.reddit.com/search">
+      <label for="SearchReddit">Search Reddit:
+        <input type="text" name="q" id="SearchReddit" placeholder="Search" /></label>
+      <button class="btn btn-outline-success">Search Reddit</button>
+    </form>
+
+  </div>
+  <hr />
+  <p>You get the idea.</p>

@@ -1,0 +1,102 @@
+<% layout("./layouts/boilerplate") %>
+  <link rel="stylesheet" href="descendantSelectors.css" />
+
+  <h1>Descendant selectors</h1>
+  <p>
+    These selectors are a combination of two elements, ids or classes. They
+    represent a nest.
+  </p>
+  <p>
+    Below we can see three buttons, the first and third are inside divs, but
+    not the second one.
+  </p>
+  <p>
+    We have styled the background-color to red for the buttons nested inside a
+    div.
+  </p>
+  <p>We need to make sure to leave a space in between the two selectors.</p>
+  <p>The code used was: div button { background-color: red; }</p>
+  <div>
+    <div id="buttonDiv"><button>Hello, I'm inside a div</button></div>
+  </div>
+  <p id="buttonDiv"><button>I am not.</button></p>
+  <div>
+    <div id="buttonDiv"><button>Hello, I'm inside a div</button></div>
+  </div>
+  <p>
+    Here we have 3 links. They are inside an unordered list, and each link is
+    inside a list item element at the same time.
+  </p>
+  <p>
+    We can style all the anchors inside unordered lists with this code: ul a {
+    color: salmon; }
+  </p>
+  <p>
+    There was no need to include the li, that would be redundant in this case.
+  </p>
+  <ul>
+    <li><a href="kdfkj">About</a></li>
+    <li><a href="Home">Home</a></li>
+    <li><a href="dffdfd">Help</a></li>
+  </ul>
+
+  <p>It also works with classes and ids.</p>
+  <p>
+    There are three paragraphs below. They are all inside a div with an id
+    called paragraphs.
+  </p>
+  <p>
+    We changed the background-color for them with this code: #paragraphs p {
+    background-color: blueviolet; }
+  </p>
+  <p>
+    Also, all the h2 headers have a class, they are called first, second and
+    third in order.
+  </p>
+  <p>
+    We changed the text color of them with this code: #paragraphs .first,
+    .second, .third { color: blue; }
+  <p>There was no need to include h2, the code understands that we are looking for those 3 classes, which are all inside
+    h2 headers</p>
+  </p>
+  <div id="paragraphs">
+    <h2 class="first">One</h2>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla facere
+      natus, in nisi maiores rem repudiandae eligendi molestias. Corporis rem
+      fuga consequatur sed laboriosam ad est iste maiores architecto alias.
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque officia
+      repellendus, corrupti dolorum soluta assumenda? Repudiandae in quae enim
+      veniam ex suscipit? Facilis fugiat, excepturi architecto corrupti optio
+      earum aspernatur. Lorem ipsum dolor sit amet consectetur adipisicing
+      elit. Animi cumque quaerat laborum ad alias facilis praesentium,
+      sapiente maiores, fugit amet dicta distinctio dolorum? Blanditiis quam
+      accusantium, doloremque nemo impedit excepturi.
+    </p>
+    <h2 class="second">Two</h2>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla facere
+      natus, in nisi maiores rem repudiandae eligendi molestias. Corporis rem
+      fuga consequatur sed laboriosam ad est iste maiores architecto alias.
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque officia
+      repellendus, corrupti dolorum soluta assumenda? Repudiandae in quae enim
+      veniam ex suscipit? Facilis fugiat, excepturi architecto corrupti optio
+      earum aspernatur. Lorem ipsum dolor sit amet consectetur adipisicing
+      elit. Animi cumque quaerat laborum ad alias facilis praesentium,
+      sapiente maiores, fugit amet dicta distinctio dolorum? Blanditiis quam
+      accusantium, doloremque nemo impedit excepturi.
+    </p>
+    <h2 class="third">Three</h2>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla facere
+      natus, in nisi maiores rem repudiandae eligendi molestias. Corporis rem
+      fuga consequatur sed laboriosam ad est iste maiores architecto alias.
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque officia
+      repellendus, corrupti dolorum soluta assumenda? Repudiandae in quae enim
+      veniam ex suscipit? Facilis fugiat, excepturi architecto corrupti optio
+      earum aspernatur. Lorem ipsum dolor sit amet consectetur adipisicing
+      elit. Animi cumque quaerat laborum ad alias facilis praesentium,
+      sapiente maiores, fugit amet dicta distinctio dolorum? Blanditiis quam
+      accusantium, doloremque nemo impedit excepturi.
+    </p>
+  </div>

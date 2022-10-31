@@ -1,0 +1,38 @@
+<% layout("./layouts/boilerplate") %>
+  <link rel="stylesheet" href="cssIntro.css" />
+  <p>
+    SS stands for Cascading Style Sheets, which we use to style out HTML. The
+    best way to link your CSS to your HTML is with external CSS. This means we
+    create a new document ending in .css and then link it to the HTML
+    document.
+  </p>
+  <p>
+    We do this with the link element, for rel we enter stylesheet, and for
+    href we enter the location of the CSS file.
+  </p>
+  <p>The exact code is a comment below this line.</p>
+  <!-- <link rel="stylesheet" href="cssIntro.css" /> -->
+  <p>
+    The color property changes the color of the text from whatever selector we
+    chose. If we wanted all the paragraphs in this document to be red, we
+    would enter this: p{ color: red; }
+  </p>
+  <p>
+    The background color property changes the color of the background of any
+    element, that is what we did to make each paragraph background light
+    greenish.
+  </p>
+  <p>The code looks like this: p { background-color: lightgreen; }</p>
+  <p>
+    Since the paragraph is a block element, the background stretches until the
+    end of the website.
+  </p>
+  <p>
+    Here we applied the same property, but to a button, we only changed the
+    color. Here is the code: button { background-color: salmon; }
+  </p>
+  <p>
+    As you can see, it is an inline element, so the background is much
+    smaller.
+  </p>
+  <div id="buttonDiv"><button class="btn">Hello!</button></div>

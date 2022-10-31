@@ -1,0 +1,50 @@
+<% layout("./layouts/boilerplate") %>
+
+  <h1>Buttons</h1>
+  <p>The button element by default will submit the form if inside a form.</p>
+  <p>
+    If the type is changed to button, it will not submit it, just click like a
+    regular button with no default behavior.
+  </p>
+  <p>
+    And if the button is outside a form, it will also just click. Does that
+    click?
+  </p>
+  <p>If not, here are some examples.</p>
+  <hr />
+  <form action="#">
+    <div id="buttonDiv">
+      <div id="buttonDiv">
+        <label for="username">Please choose a username:
+          <input type="username" placeholder="username" id="username" /></label>
+        <label for="password">Please choose a password:
+          <input type="password" placeholder="password" id="password" /></label>
+      </div>
+    </div>
+    <div id="buttonDiv"><button class="btn btn-outline-success" type="">Register</button></div>
+  </form>
+  <hr />
+  <p>
+    This past button did not have it's type set to anything, but since the
+    default is to submit form, it did. This would depend on the location you
+    choose on the form element itself, (the action attribute).
+  </p>
+  <hr />
+  <form action="#">
+    <div id="buttonDiv">
+      <div id="buttonDiv">
+        <label for="username">Please choose a username:
+          <input type="username" placeholder="username" id="username" /></label>
+        <label for="password">Please choose a password:
+          <input type="password" placeholder="password" id="password" /></label>
+      </div>
+    </div>
+    <div id="buttonDiv"><button class="btn btn-outline-success" type="button">Register</button></div>
+  </form>
+  <hr />
+  <p>
+    The only difference in this second form is that the button type is set to
+    button, so even though it is inside the form, it does not get submitted.
+  </p>
+  <div id="buttonDiv"><button class="btn btn-outline-success">Press me!</button></div>
+  <p>And this one just clicks since it is outside any forms.</p>

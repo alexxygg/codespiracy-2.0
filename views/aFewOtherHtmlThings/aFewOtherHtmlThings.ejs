@@ -1,0 +1,42 @@
+<% layout("./layouts/boilerplate") %>
+
+  <h1>Other not too frequent elements and tips?</h1>
+  <p>
+    The range input type is a slider, it can be used to determine music level,
+    etc.
+  </p>
+  <p>
+    Make sure the label for entry and input id and name match to sync these
+    two.
+  </p>
+  <p>The min and max can be adjusted as needed.</p>
+  <p>The step option allows us to go up or down by that amount only.</p>
+  <div id="buttonDiv">
+    <form action="#">
+      <label for="HowMotivatedDoYouFeel">From 1 to 10, how motivated do you feel today?</label>
+      <input type="range" id="HowMotivatedDoYouFeel" name="HowMotivatedDoYouFeel" min="1" max="10" />
+      <button class="btn btn-outline-success">Continue</button>
+    </form>
+  </div>
+  <hr />
+  <p>Here we chose step to 10, so no number selection will end in 1-9.</p>
+  <div id="buttonDiv">
+    <form action="#">
+      <label for="whoknows">How many more years in decades do you think humanity will
+        survive?</label><input type="number" id="whoknows" name="whoknows" min="10" max="1000" step="10" />
+      <p>(HIT ENTER TO TEST)</p>
+    </form>
+
+  </div>
+  <hr />
+  <p>
+    The number input from a while back also takes min and max, so it will not
+    accept less than 1 or more than 1000 in this next example.
+  </p>
+  <div id="buttonDiv">
+    <form action="#">
+      <label for="number">Choose a number between 1 and 1000
+        <input type="number" min="1" max="1000" id="number" name="number" placeholder="xx" />
+      </label>
+    </form>
+  </div>

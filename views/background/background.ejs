@@ -1,0 +1,93 @@
+<% layout("./layouts/boilerplate") %>
+
+  <link rel="stylesheet" href="background.css" />
+  <p>
+    The background help us do many things, other than change the color of it.
+  </p>
+  <p>
+    Every section below has a div with text. All sections have: section {
+    width: 80%; height: 400px; background-color: gold; margin: auto; }
+  </p>
+  <p>
+    Each section has an id, which we used to give them specific background
+    properties.
+  </p>
+  <hr />
+  <h2>background-size: cover;</h2>
+  <p>
+    This one scales the image as large as possible without stretching the
+    image. It is cropped vertically or horizontally so that there is no empty
+    space.
+  </p>
+  <section class="section" id="cover">
+    <div id="div">Hello, how are you?</div>
+  </section>
+  <hr />
+  <section class="section" id="cover2">
+    <div id="div">Hello, how are you?</div>
+  </section>
+  <hr />
+  <h2>background-size: contain;</h2>
+  <p>
+    This one also scales the image as large as possible, but without cropping
+    or stretching it. You may get a repeat. You can also have it set to
+    no-repeat or to a number for the repeats you want to see.
+  </p>
+  <section class="section" id="contain">
+    <div id="div">Hello, how are you?</div>
+  </section>
+  <hr />
+  <section class="section" id="contain2">
+    <div id="div">Hello, how are you?</div>
+  </section>
+  <hr />
+  <h2>background-position: bottom;</h2>
+  <p>
+    This one has the image start at the bottom, it can be set to other
+    positions as well.
+  </p>
+  <section class="section" id="position">
+    <div id="div">Hello, how are you?</div>
+  </section>
+  <hr />
+  <h2>Shorthands</h2>
+  <h2>Combined</h2>
+  <p>background-size: contain; background-position: bottom;</p>
+  <section class="section" id="position2">
+    <div id="div">Hello, how are you?</div>
+  </section>
+  <hr />
+  <p>
+    The shorthand allows us to combine all these properties into just
+    background.(size,position,image,etc.)
+  </p>
+  <p>
+    If using shorthand, background-position has to be set before
+    background-size with a forward slash in between.
+  </p>
+  <p>The last image would look like this: background: bottom/contain.</p>
+  <hr />
+  <p>We can also have multiple images.</p>
+  <p>Here we set our image to the left and to a size of 25%.</p>
+  <p>background: url(./jefferson-sees-_nZWNAuW-U4-unsplash.jpg) left/25%;</p>
+
+  <section class="section" id="resize">
+    <div id="div">Hello, how are you?</div>
+  </section>
+  <hr />
+  <p>Here we set our image to the top and to a size of 50%.</p>
+  <p>background: url(./maryan-ivasyk-F9qdzCQkRW0-unsplash.jpg) top/50%;</p>
+
+  <section class="section" id="resize2">
+    <div id="div">Hello, how are you?</div>
+  </section>
+  <hr />
+  <p>And with no repeat.</p>
+  <p>
+    background: url(./maryan-ivasyk-F9qdzCQkRW0-unsplash.jpg) top/80%
+    no-repeat gold;
+  </p>
+  <p>We added the gold color to fill the emptiness.</p>
+  <section class="section" id="resizenorepeat">
+    <div id="div">Hello, how are you?</div>
+  </section>

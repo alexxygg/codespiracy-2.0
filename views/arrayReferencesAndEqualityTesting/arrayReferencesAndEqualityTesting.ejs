@@ -1,0 +1,22 @@
+<% layout("./layouts/boilerplate") %>
+  <h1>References and Equality Testing</h1>
+  <p>
+    When trying to compare two array sets or specific values, it will always
+    return false.
+  </p>
+  <p>An array variable is only a reference to the set of values.</p>
+  <p>["hey"] === ["hey"];</p>
+  <p>false</p>
+  <img src="arrayStrictEqualityFalse.png" alt="" />
+  <p>
+    They can not be compared because they are only referencing the array, it
+    is not the same array.
+  </p>
+  <p>If we are to create an exact copy, we can have it result in true.</p>
+  <p>Here we created a variable for an array.</p>
+  <p>
+    Then we gave the variable another name additional to the first one, so the
+    reference is still the same, they are pointing to the exact same array
+    this time.
+  </p>
+  <img src="arrayStrictEqualityTrue.png" alt="" />

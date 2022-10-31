@@ -1,0 +1,66 @@
+<% layout("./layouts/boilerplate") %>
+  <link rel="stylesheet" href="eventBubbling.css">
+  <h1>Event Bubbling</h1>
+  <p>
+    When we have multiple events for various HTML elements nested withing one
+    another, we can accidentally trigger other events we didn't want to.
+  </p>
+  <p>Example:</p>
+  <p>
+    If we have a div with a section inside, and that section has a button
+    inside:
+  </p>
+  <p>
+    If each of these 3 elements have an onclick event, and we happen to click
+    the button, which is the element most deeply nested in the example, we
+    will trigger all 3 events!
+  </p>
+  <div id="buttonDiv">
+    <div id="divBubble" onclick="alert('Alert, div clicked.')">
+      Div
+      <section id="sectionBubble" onclick="alert('Alert, section clicked.')">
+        Section <br>
+        <button class="btn btn-outline-primary" id="buttonBubble" onclick="alert('Alert, button clicked.')">Click Me.
+        </button><br>
+        Section
+      </section>
+      Div
+    </div>
+  </div>
+  <ul>
+    <li>div is the outermost element, the parent of the section.</li>
+    <li>section is inside div, while also being the parent of the button.</li>
+    <li>button is the child of section, the innermost element.</li>
+  </ul>
+  <p>
+    We may sometimes want an event to bubble, like a wave or chain-reaction.
+  </p>
+  <img src="eventBubbling.png" alt="" />
+  <h2>stopPropagation()</h2>
+  <p>
+    We can use this method on our event object to make sure the event doesn't
+    bubble up, or trigger other events which may be chained to the element.
+  </p>
+  <p>Here we use the same example:</p>
+  <p>Clicking the nested elements will no longer trigger the outer events!</p>
+  <p>
+    (Since the outer element, our div, would not trigger any events anyway.)
+  </p>
+
+  <div id="buttonDiv">
+    <div id="divStop" onclick="alert('Alert, div clicked.')">
+      Div
+      <section id="sectionStop" onclick="alert('Alert, section clicked.')">
+        Section <br>
+        <button class="btn btn-outline-primary" id="buttonStop" onclick="alert('Alert, button clicked.')">
+          Click Me.
+        </button>
+        <br>
+        Section
+      </section>
+      Div
+    </div>
+  </div>
+  <img src="stopPropagationEventBubblingHTML.png" alt="" />
+  <img src="stopPropagationEventBubblingJS.png" alt="" />
+  <script src="eventBubbling.js"></script>

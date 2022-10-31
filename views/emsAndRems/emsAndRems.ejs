@@ -1,0 +1,38 @@
+<% layout("./layouts/boilerplate") %>
+  <link rel="stylesheet" href="emsAndRems.css" />
+
+  <h1>em and rem</h1>
+  <p>em is a unit of measure for text and other properties.</p>
+  <p>
+    When used with text, the em of the parent would be 100%, and any child
+    would have an em proportional to the parent.
+  </p>
+  <p>
+    Here we have a section, there is a header inside it, inside of the section
+    is also an unordered list with 5 list items.
+  </p>
+  <section>
+    <h2>Hello, I am a header.</h2>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur
+      minima earum voluptate accusamus dolorum, repudiandae odio est natus,
+      architecto nam nostrum repellendus nobis. Nostrum atque minus commodi ex
+      blanditiis natus?
+    </p>
+  </section>
+  <p>
+    This helps us keep a direct ratio of the child element if we modify the
+    sizes of the parent elements.
+  </p>
+  <p>
+    When used with something like padding, 1em means it will be in direct
+    relation to the content.
+  </p>
+  <p>
+    It helps keep the styles we applied without making it look different even
+    if everything else has changed. They scale as it goes.
+  </p>
+  <p>
+    rems or root ems do not base their size on the parent, but from the root
+    size of the HTML document.
+  </p>

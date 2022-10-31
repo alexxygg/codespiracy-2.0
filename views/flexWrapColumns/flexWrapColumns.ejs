@@ -1,0 +1,204 @@
+<% layout("./layouts/boilerplate") %>
+  <link rel="stylesheet" href="flexWrapColumns.css" />
+
+  <h1>flex-wrap COLUMNS</h1>
+  <p>
+    Flex wrap helps us determine the behavior our divs, or any element we are
+    using, will have when it runs out of space to have its full size.
+  </p>
+  <h2>No flex-wrap</h2>
+  <p>
+    Here we have 5 divs, which are each 45px by 45px for width and height with
+    a border of 5px. They are inside a container that is only 120px in height.
+  </p>
+  <p>
+    They do not fit and as a consequence look like they are overflowing. There
+    is no flex declared for this original example.
+  </p>
+  <section class="section" id="containersnowrap">
+    <section class="section" id="container">
+      <div id="div">A</div>
+      <div id="div">B</div>
+      <div id="div">C</div>
+      <div id="div">D</div>
+      <div id="div">E</div>
+      <div id="div" class="f">F</div>
+      <div id="div" class="g">G</div>
+    </section>
+    <section class="section" id="containertall">
+      <div id="div">A</div>
+      <div id="div">B</div>
+      <div id="div">C</div>
+      <div id="div">D</div>
+      <div id="div">E</div>
+      <div id="div" class="f">F</div>
+      <div id="div" class="g">G</div>
+    </section>
+  </section>
+  <hr />
+  <h2>Columns</h2>
+
+  <h2>flex-wrap</h2>
+  <p>
+    Here is the same example, but with display: flex , we set the
+    flex-direction to column since it is by default a row.
+  </p>
+  <p>We also set flex-wrap: wrap.</p>
+  <p>The divs wrap around once they can't fit and go to the next column.</p>
+  <p>And they can have the justify-content styled as wished too.</p>
+  <h2>This is justify-content: flex-start (THE DEFAULT)</h2>
+  <section class="section" id="containers">
+    <section class="section" id="columnflexwrapflexstart">
+      <div id="div">A</div>
+      <div id="div">B</div>
+      <div id="div">C</div>
+      <div id="div">D</div>
+      <div id="div">E</div>
+      <div id="div" class="f">F</div>
+      <div id="div" class="g">G</div>
+    </section>
+    <section class="section" id="columnflexwrapflexstart2">
+      <div id="div">A</div>
+      <div id="div">B</div>
+      <div id="div">C</div>
+      <div id="div">D</div>
+      <div id="div">E</div>
+      <div id="div" class="f">F</div>
+      <div id="div" class="g">G</div>
+    </section>
+  </section>
+
+  <h2>justify-content: flex-end</h2>
+  <section class="section" id="containers">
+    <section class="section" id="columnflexwrapflexend">
+      <div id="div">A</div>
+      <div id="div">B</div>
+      <div id="div">C</div>
+      <div id="div">D</div>
+      <div id="div">E</div>
+      <div id="div" class="f">F</div>
+      <div id="div" class="g">G</div>
+    </section>
+    <section class="section" id="columnflexwrapflexend2">
+      <div id="div">A</div>
+      <div id="div">B</div>
+      <div id="div">C</div>
+      <div id="div">D</div>
+      <div id="div">E</div>
+      <div id="div" class="f">F</div>
+      <div id="div" class="g">G</div>
+    </section>
+  </section>
+
+  <h2>justify-content: center</h2>
+  <section class="section" id="containers">
+    <section class="section" id="columnflexwrapcenter">
+      <div id="div">A</div>
+      <div id="div">B</div>
+      <div id="div">C</div>
+      <div id="div">D</div>
+      <div id="div">E</div>
+      <div id="div" class="f">F</div>
+      <div id="div" class="g">G</div>
+    </section>
+    <section class="section" id="columnflexwrapcenter2">
+      <div id="div">A</div>
+      <div id="div">B</div>
+      <div id="div">C</div>
+      <div id="div">D</div>
+      <div id="div">E</div>
+      <div id="div" class="f">F</div>
+      <div id="div" class="g">G</div>
+    </section>
+  </section>
+
+  <h2>justify-content: space-between</h2>
+  <section class="section" id="containers">
+    <section class="section" id="columnflexwrapspacebetween">
+      <div id="div">A</div>
+      <div id="div">B</div>
+      <div id="div">C</div>
+      <div id="div">D</div>
+      <div id="div">E</div>
+      <div id="div" class="f">F</div>
+      <div id="div" class="g">G</div>
+    </section>
+    <section class="section" id="columnflexwrapspacebetween2">
+      <div id="div">A</div>
+      <div id="div">B</div>
+      <div id="div">C</div>
+      <div id="div">D</div>
+      <div id="div">E</div>
+      <div id="div" class="f">F</div>
+      <div id="div" class="g">G</div>
+    </section>
+  </section>
+
+  <h2>justify-content: space-around</h2>
+  <section class="section" id="containers">
+    <section class="section" id="columnflexwrapspacearound">
+      <div id="div">A</div>
+      <div id="div">B</div>
+      <div id="div">C</div>
+      <div id="div">D</div>
+      <div id="div">E</div>
+      <div id="div" class="f">F</div>
+      <div id="div" class="g">G</div>
+    </section>
+    <section class="section" id="columnflexwrapspacearound2">
+      <div id="div">A</div>
+      <div id="div">B</div>
+      <div id="div">C</div>
+      <div id="div">D</div>
+      <div id="div">E</div>
+      <div id="div" class="f">F</div>
+      <div id="div" class="g">G</div>
+    </section>
+  </section>
+
+  <h2>justify-content: space-evenly</h2>
+  <section class="section" id="containers">
+    <section class="section" id="columnflexwrapspaceevenly">
+      <div id="div">A</div>
+      <div id="div">B</div>
+      <div id="div">C</div>
+      <div id="div">D</div>
+      <div id="div">E</div>
+      <div id="div" class="f">F</div>
+      <div id="div" class="g">G</div>
+    </section>
+    <section class="section" id="columnflexwrapspaceevenly2">
+      <div id="div">A</div>
+      <div id="div">B</div>
+      <div id="div">C</div>
+      <div id="div">D</div>
+      <div id="div">E</div>
+      <div id="div" class="f">F</div>
+      <div id="div" class="g">G</div>
+    </section>
+  </section>
+
+  <hr />
+  <h2>flex-wrap: wrap-reverse</h2>
+  <p>This one also wraps our divs, but in reverse order.</p>
+  <h2>This is justify-content: flex-start (THE DEFAULT)</h2>
+  <section class="section" id="containers">
+    <section class="section" id="columnflexwrapreverse">
+      <div id="div">A</div>
+      <div id="div">B</div>
+      <div id="div">C</div>
+      <div id="div">D</div>
+      <div id="div">E</div>
+      <div id="div" class="f">F</div>
+      <div id="div" class="g">G</div>
+    </section>
+    <section class="section" id="columnflexwrapreverse2">
+      <div id="div">A</div>
+      <div id="div">B</div>
+      <div id="div">C</div>
+      <div id="div">D</div>
+      <div id="div">E</div>
+      <div id="div" class="f">F</div>
+      <div id="div" class="g">G</div>
+    </section>
+  </section>

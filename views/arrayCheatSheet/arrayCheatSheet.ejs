@@ -1,0 +1,58 @@
+<% layout("./layouts/boilerplate") %>
+
+  <h1>Array CheatSheet</h1>
+  <h3>
+    Cheat sheet: JavaScript Array methods Deriving a new Array from an
+    existing Array:
+  </h3>
+  <p>["a","b","c"] <strong>.slice</strong> (1, 3) ⟼ ["b","c"]</p>
+  <p>["a","b","a"] <strong>.filter</strong> (x => x==="a") ⟼ ["a","a"]</p>
+  <p>["c","b"] <strong>.map</strong> (x => x+x) ⟼ ["c","b"]</p>
+  <p>["c","b"] <strong>.flatMap</strong> (x => [x,x]) ⟼ ["c","c","b","b"]</p>
+
+  <h3>Computing a summary of an Array:</h3>
+  <p>["a","b","c"] <strong>.some</strong> (x => x==="b") ⟼ true</p>
+  <p>["a","b","c"] <strong>.every</strong> (x => x==="b") ⟼ false</p>
+
+  <p>["a","b","c"] <strong>.join</strong> ("-") ⟼ "a-b -c"</p>
+
+  <p>
+    ["a","b"] <strong>.reduce</strong> ((result,x) => result+x, "c") ⟼ "cab"
+  </p>
+  <p>
+    ["a","b"] <strong>.reduceRight</strong> ((result,x) => result+x, "c") ⟼
+    "cba"
+  </p>
+
+  <h3>
+    Changing all of an Array (the input Array is modified and returned):
+  </h3>
+  <p>["a","b","c"] <strong>.fill</strong> ("b") ⟼ ["b","b","b"]</p>
+  <p>["a","b","c"] <strong>.reverse</strong> () ⟼ ["c","b","a"]</p>
+  <p>["a","b","a"] <strong>.sort</strong> () ⟼ ["a","a","b"]</p>
+
+  <h3>Finding Array elements:</h3>
+  <p>["a","b","a"] <strong>.includes</strong> ("a") ⟼ true</p>
+  <p>["a","b","a"] <strong>.indexOf</strong> ("a") ⟼ 0</p>
+  <p>["a","b","a"] <strong>.lastIndexOf</strong> ("a") ⟼ 2</p>
+  <p>["a","b","a"] <strong>.find</strong> (x => x==="a") ⟼ "a"</p>
+  <p>["a","b","a"] <strong>.findIndex</strong> (x => x==="a") ⟼ 0</p>
+
+  <h3>
+    Listing elements (spreading via `...` is needed because the methods return
+    iterables):
+  </h3>
+  <p>[...["a","b","c"] <strong>.keys</strong> ()] ⟼ [0,1,2]</p>
+  <p>[...["a","b","c"] <strong>.values</strong> ()] ⟼ ["a","b","c"]</p>
+  <p>
+    [...["a","b","c"] <strong>.entries</strong> ()] ⟼
+    [[0,"a"],[1,"b"],[2,"c"]]
+  </p>
+
+  <h3>Adding or removing an element at either end of an Array:</h3>
+  <p>arr=["a","b"]; arr.push("c"); arr ⟼ ["a","b","c"]</p>
+  <p>arr=["a","b","c"]; arr.pop(); arr ⟼ ["a","b"]</p>
+
+  <p>arr=["a","b"]; arr.unshift("c"); arr ⟼ ["c","a","b"]</p>
+  <p>arr=["c","a","b"]; arr.shift(); arr ⟼ ["a","b"]</p>
+  <img style="width: 100%" src="arrayCheatSheet.jpg" alt="" />

@@ -1,0 +1,36 @@
+<% layout("./layouts/boilerplate") %>
+  <link rel="stylesheet" href="class.css" />
+
+  <h1>class Selector</h1>
+  <p>
+    The class selector is a little different from the id selector, this one
+    can be used on multiple elements, where the id can only have one element
+    with the same id name per HTML page.
+  </p>
+  <p>
+    Here are the buttons from the last example, they each have an id called
+    first, second, third, fourth and fifth respectively.
+  </p>
+  <p>But all of them have a class selector which we have called buttons.</p>
+  <p>
+    You can see they all have different color attributes, but we styled the
+    background color for all of them using their class buttons.
+  </p>
+  <p>
+    The code looks like this: .buttons { background-color: lightseagreen; }
+  </p>
+  <p>
+    Notice that the class selector has a period before the name we gave it,
+    unlike the id selector which used a hashtag.
+  </p>
+  <p>
+    Each button has a different font color which we styled using 5 ids in
+    total, but the background color only needed one selector!
+  </p>
+  <div id="buttonDiv">
+    <button class="buttons" id="first">I'm the 1st button!</button>
+    <button class="buttons" id="second">I'm the 2nd button!</button>
+    <button class="buttons" id="third">I'm the 3rd button!</button>
+    <button class="buttons" id="fourth">I'm the 4th button!</button>
+    <button class="buttons" id="fifth">I'm the 5th button!</button>
+  </div>

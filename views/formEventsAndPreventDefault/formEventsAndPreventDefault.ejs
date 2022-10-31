@@ -1,0 +1,123 @@
+<% layout("./layouts/boilerplate") %>
+
+  <h1>Form events & preventDefault</h1>
+
+  <form action="#">
+    <div id="inputDiv">
+      <input type="text" />
+      <button class="btn btn-outline-success">Submit</button>
+    </div>
+  </form>
+
+  <p>
+    When we have a form and the user submits it, the action we give the form
+    element is where the form data will be returned to, or sent to by the
+    user. Also, the website will change to that address by DEFAULT.
+  </p>
+  <img src="formHTML.png" alt="" />
+  <p>If we wanted to stay on the same webpage, we would use preventDefault</p>
+  <h2>preventDefault()</h2>
+  <p>
+    We start by creating an event listener to the form when it is submitted.
+  </p>
+  <img src="eventListenerFormCode.png" alt="" />
+  <p>
+    Now we can use preventDefault() to change the default behavior of the
+    form, which is to change the website to the form action.
+  </p>
+  <p>
+    To do this, we add preventDefault after the parameter name inside our
+    function. This parameter is the auto-generated event object which we can
+    name in any way when creating the function.
+  </p>
+  <img src="preventDefaultFormCode.png" alt="" />
+  <p>Now, we will stay on the website even after submitting.</p>
+  <h2>Example</h2>
+  <p>
+    Here we have an input for internet surfers, they can leave a comment by
+    submitting the form.
+  </p>
+  <p>
+    The comment will appear on the website, we will retrieve the form data and
+    post it directly on the same page, without even having to refresh.
+  </p>
+  <img src="exampleCommentFormHTML.png" alt="" />
+  <img src="exampleCommentFormJS.png" alt="" />
+  <hr />
+
+  <h2>(POST)</h2>
+  <h3>The world is ending! Scientists confirm...</h3>
+
+  <form id="commentForm" action="#">
+    <div id="inputDiv">
+
+      <input placeholder="Leave a comment!" id="commentInput" type="text" />
+      <button class="btn btn-outline-success">Post comment</button>
+    </div>
+  </form>
+  <ul id="commentsUL"></ul>
+
+  <hr />
+  <h2>Example</h2>
+  <p>
+    And here is another example for a form which prints out the number and the
+    item in a single list item, the webpage does not change either.
+  </p>
+  <img src="exampleFormGroceryListHTML.png" alt="" />
+  <img src="exampleFormGroceryListJS.png" alt="" />
+  <hr />
+  <h1>Grocery List</h1>
+  <form id="form2" action="/nowhere">
+    <div id="inputDiv">
+      <label for="item">Enter A Product</label>
+      <input type="text" id="product" name="product" placeholder="product" />
+      <label for="item">Enter A Quantity</label>
+      <input type="number" id="qty" name="qty" placeholder="amount" />
+      <button class="btn btn-outline-success">Submit</button>
+    </div>
+  </form>
+
+  <ul id="list"></ul>
+  <hr />
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem odit corrupti molestiae necessitatibus. Neque, vel
+  labore quasi sequi corporis, voluptate at voluptates libero recusandae, fuga molestiae illum ad. Cum, officia. Lorem
+  ipsum, dolor sit amet consectetur adipisicing elit. Quam unde debitis, amet recusandae saepe obcaecati quidem
+  dignissimos consequatur magnam laboriosam qui, sit, excepturi distinctio enim eos quis delectus rem. Nobis.
+  Ullam, iusto vel ipsa nisi vitae dolor quisquam, consectetur quasi fugiat, dicta hic dolores deserunt maiores
+  corporis! Accusantium consequuntur sed quae eius, possimus nobis inventore culpa cupiditate voluptates quasi ratione?
+  Odio est voluptatem unde, corporis enim amet omnis totam ut velit blanditiis neque consequuntur sed debitis, fuga
+  nihil, fugit consectetur perferendis dolore porro ab quod a. Quo rem neque consequatur.
+  Vitae voluptatem deserunt rem esse alias velit amet ratione repudiandae, a cumque reprehenderit sapiente laborum nihil
+  voluptate voluptates iure pariatur nulla ex eius. Voluptate explicabo tempore fugit qui eius dignissimos?
+  Provident, commodi hic ratione animi doloribus est illo autem, fuga nostrum ipsam impedit praesentium corrupti atque
+  rem temporibus molestiae. Eligendi odit nisi, porro culpa beatae fuga velit voluptatum officia. Corporis.
+  Tempora molestias harum omnis eveniet assumenda minus, explicabo ipsum cum placeat. Ducimus aliquam voluptas vero
+  quidem ad debitis repudiandae molestiae saepe officiis accusantium illum excepturi aut laudantium error, reprehenderit
+  eos.
+  Cupiditate cum vero et doloremque. Ab possimus explicabo, minima eos corporis neque nihil alias sequi error expedita
+  reprehenderit labore! Necessitatibus assumenda facere sit nisi repudiandae commodi laudantium pariatur iusto.
+  Laudantium.
+  Iure vitae asperiores voluptates animi beatae quos, atque ex nemo esse accusantium laboriosam. Voluptate incidunt
+  veritatis odio dolores non voluptates porro cupiditate asperiores, deleniti nobis perferendis minima corrupti
+  consequatur sit.
+  Necessitatibus ipsa optio ab sunt, id labore soluta sapiente, accusamus molestias facilis voluptatibus. Iste corrupti
+  sequi ad explicabo iusto molestiae laboriosam, tempore excepturi reprehenderit libero eum eaque aspernatur, ut in!
+  Totam animi esse facere dolore, commodi repellat pariatur voluptatum, natus nisi quo, suscipit libero perspiciatis
+  ipsa vero modi laboriosam aliquid labore ad porro. Corrupti placeat dicta omnis alias tempore cum?
+  Consequatur perspiciatis, dolor sed sequi, consequuntur dolores nihil laboriosam accusantium maiores hic quisquam iure
+  quos ullam repudiandae officiis, quod magnam dolore! Dolorum, maiores enim praesentium est a voluptate suscipit
+  molestias.
+  Porro nesciunt vel dignissimos enim expedita perferendis alias, tempora ad ratione! Illo sunt officia dolore fugit
+  error. Odit laboriosam provident corrupti magni, explicabo sint minus aut quod quidem? Enim, beatae.
+  Obcaecati est inventore minus sint debitis iusto harum ut exercitationem necessitatibus cupiditate veritatis
+  laboriosam nesciunt voluptatem excepturi, odio dolor esse totam at quae quasi nemo voluptatibus molestias quibusdam.
+  Laudantium, corrupti.
+  Explicabo iure id eveniet perspiciatis nihil eum quasi temporibus ducimus adipisci, exercitationem magnam et aliquam,
+  alias quas laboriosam. Aut ea quis dignissimos, nobis beatae sapiente similique! Quis error voluptate dolores.
+  A expedita ducimus nam consequatur voluptatem ipsum, necessitatibus est excepturi temporibus quas quam autem natus
+  officiis velit quis corporis cum quos mollitia deserunt? Repellat, vero. Tenetur vero doloremque commodi deserunt.
+  Cumque, consequatur rem beatae exercitationem laborum animi sed fugit quo veritatis facere reprehenderit, voluptate
+  pariatur maiores ducimus facilis eveniet. Delectus ipsum expedita cumque exercitationem minima? Dolore laudantium
+  libero reprehenderit eum.
+
+  <script src="formEventsAndPreventDefault.js"></script>

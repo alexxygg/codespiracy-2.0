@@ -1,0 +1,47 @@
+.section {
+  width: 80%;
+  height: 600px;
+  background-color: gold;
+  margin: auto;
+  margin-bottom: 5vw;
+}
+#div {
+  font-size: 50px;
+}
+#cover {
+  background-image: url(./jefferson-sees-_nZWNAuW-U4-unsplash.jpg);
+
+  background-size: cover;
+}
+#cover2 {
+  background-image: url(./maryan-ivasyk-F9qdzCQkRW0-unsplash.jpg);
+  background-size: cover;
+}
+#contain {
+  background-image: url(./jefferson-sees-_nZWNAuW-U4-unsplash.jpg);
+  background-size: contain;
+}
+#contain2 {
+  background-image: url(./maryan-ivasyk-F9qdzCQkRW0-unsplash.jpg);
+  background-size: contain;
+}
+#position {
+  background-image: url(./jefferson-sees-_nZWNAuW-U4-unsplash.jpg);
+
+  background-position: bottom;
+}
+#position2 {
+  background-image: url(./maryan-ivasyk-F9qdzCQkRW0-unsplash.jpg);
+  background-size: contain;
+  background-position: bottom;
+}
+#resize {
+  background: url(./jefferson-sees-_nZWNAuW-U4-unsplash.jpg) left/25%;
+}
+#resize2 {
+  background: url(./maryan-ivasyk-F9qdzCQkRW0-unsplash.jpg) top/50%;
+}
+#resizenorepeat {
+  background: url(./maryan-ivasyk-F9qdzCQkRW0-unsplash.jpg) top/80% no-repeat
+    gold;
+}

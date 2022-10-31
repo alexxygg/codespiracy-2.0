@@ -1,0 +1,6 @@
+input[type="text"] {
+  color: blue;
+}
+a [href*="www.hello.com"] {
+  color: blueviolet;
+}

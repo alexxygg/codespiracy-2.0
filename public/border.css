@@ -1,0 +1,65 @@
+.properties {
+  border: 2vw purple solid;
+  max-width: 38vw;
+  margin-left: 32vw;
+}
+.first,
+.second {
+  max-width: 38vw;
+  margin-left: 31vw;
+}
+.second {
+  background-color: lightgreen;
+}
+.third {
+  background-color: lightgreen;
+  border: 4vw black solid;
+  max-width: 38vw;
+  margin-left: 31vw;
+}
+.fourth,
+.fifth {
+  max-width: 38vw;
+  margin-left: 31vw;
+}
+.fourth {
+  background-color: lightseagreen;
+}
+.fifth {
+  background-color: lightseagreen;
+  border: 4vw black solid;
+  box-sizing: border-box;
+  max-width: 38vw;
+  margin-left: 31vw;
+}
+.six {
+  border-left: 2vw green dotted;
+  border-bottom: 2vw green dotted;
+  width: 50vw;
+  margin-left: 25vw;
+}
+.seven {
+  border: 2vw red solid;
+  border-radius: 50%;
+  width: 50vw;
+  margin-left: 25vw;
+}
+.eight {
+  border: 2vw red solid;
+  border-radius: 50%;
+  width: 50vw;
+  margin-left: 25vw;
+}
+.nine {
+  border: 2vw blue solid;
+  border-top-left-radius: 2vw;
+  border-bottom-right-radius: 2vw;
+  width: 50vw;
+  margin-left: 25vw;
+}
+
+img {
+  max-width: 30vw;
+  border: 2vw rgb(236, 183, 191) solid;
+  border-radius: 50%;
+}

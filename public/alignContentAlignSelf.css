@@ -1,0 +1,55 @@
+.section {
+  width: 80%;
+  height: 150px;
+  background-color: brown;
+  margin-left: 10%;
+}
+#div {
+  height: 50px;
+  width: 50px;
+  background-color: blanchedalmond;
+  border: 5px red solid;
+}
+#noaligncontent {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+#aligncontentcenter {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  align-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+#aligncontentstart {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+#accenter {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+#acstart {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.alignselfstart {
+  align-self: flex-start;
+}
+.alignselfcenter {
+  align-self: center;
+}

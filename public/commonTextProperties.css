@@ -1,0 +1,18 @@
+h1 {
+  text-align: center;
+}
+h2 {
+  text-align: right;
+}
+h3 {
+  font-weight: 900;
+}
+h5 {
+  text-decoration: red wavy line-through;
+}
+h6 {
+  letter-spacing: 15px;
+}
+div {
+  line-height: 50px;
+}

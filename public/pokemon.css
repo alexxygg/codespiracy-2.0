@@ -1,0 +1,36 @@
+.border12 {
+  display: grid;
+  place-items: center;
+  border: 1vw solid;
+}
+
+.radial-repeating {
+  border-width: 0.8vw;
+  border-image: repeating-radial-gradient(
+      circle at 10px,
+      turquoise,
+      pink 2px,
+      greenyellow 4px,
+      pink 2px
+    )
+    1;
+  margin: 0.2vw;
+}
+#container {
+  width: 90vw;
+  margin-left: 5vw;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 10vh;
+}
+
+span {
+  max-width: 9vw;
+  text-align: center;
+  box-sizing: border-box;
+}
+img {
+  width: 7vw;
+  align-self: center;
+}

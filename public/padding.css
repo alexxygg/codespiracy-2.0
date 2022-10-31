@@ -1,0 +1,29 @@
+h1 {
+  padding: 30px;
+  background-color: red;
+  width: 200px;
+}
+.allsides {
+  padding: 20px;
+}
+h3 {
+  background-color: lightblue;
+  width: 300px;
+}
+.leftright {
+  padding: 20px 30px;
+}
+button {
+  padding: 0px 20px;
+  background-color: lightcoral;
+}
+.threevalues {
+  padding: 20px 50px 60px;
+}
+.allfour {
+  padding: 15px 30px 45px 60px;
+}
+.onebyone {
+  padding: 15px 30px 45px 60px;
+  background-color: lightseagreen;
+}

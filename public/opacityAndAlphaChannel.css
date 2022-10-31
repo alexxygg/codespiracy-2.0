@@ -1,0 +1,74 @@
+.section {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(46, 202, 98);
+}
+#rgba1 {
+  width: 50%;
+  height: 50%;
+  background-color: rgba(57, 10, 224, 1);
+}
+#rgba2 {
+  width: 50%;
+  height: 50%;
+  background-color: rgba(57, 10, 224, 0.8);
+}
+#rgba3 {
+  width: 50%;
+  height: 50%;
+  background-color: rgba(57, 10, 224, 0.6);
+}
+#rgba4 {
+  width: 50%;
+  height: 50%;
+  background-color: rgba(57, 10, 224, 0.4);
+}
+#rgba5 {
+  width: 50%;
+  height: 50%;
+  background-color: rgba(57, 10, 224, 0.2);
+}
+#rgba6 {
+  width: 50%;
+  height: 50%;
+  background-color: rgba(57, 10, 224, 0);
+}
+.section {
+  display: inline-block;
+}
+#opacity1 {
+  opacity: 1;
+  background-color: rgb(57, 10, 224);
+  width: 50%;
+  height: 50%;
+}
+#opacity2 {
+  opacity: 0.8;
+  background-color: rgb(57, 10, 224);
+  width: 50%;
+  height: 50%;
+}
+#opacity3 {
+  opacity: 0.6;
+  background-color: rgb(57, 10, 224);
+  width: 50%;
+  height: 50%;
+}
+#opacity4 {
+  opacity: 0.4;
+  background-color: rgb(57, 10, 224);
+  width: 50%;
+  height: 50%;
+}
+#opacity5 {
+  opacity: 0.2;
+  background-color: rgb(57, 10, 224);
+  width: 50%;
+  height: 50%;
+}
+#opacity6 {
+  opacity: 0;
+  background-color: rgb(57, 10, 224);
+  width: 50%;
+  height: 50%;
+}

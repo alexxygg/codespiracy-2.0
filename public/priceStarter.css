@@ -1,0 +1,105 @@
+#body {
+  font-family: "Open Sans", sans-serif;
+  box-sizing: border-box;
+  background-color: rgb(37, 193, 221);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90vw;
+  margin-left: 5vw;
+}
+.panel {
+  background-color: white;
+  border-radius: 1vw;
+  display: flex;
+  width: 90%;
+  margin-left: 5vw;
+  padding: 0.5vw 1vw;
+  flex-direction: column;
+  text-align: center;
+  text-transform: uppercase;
+  box-sizing: border-box;
+}
+.pricing-plan {
+  border-bottom: 0.5vw slategray solid;
+  width: 33%;
+
+  border-bottom: none;
+  border-right: 0.5vw slategray solid;
+  padding: 1vw 2vw;
+  box-sizing: border-box;
+}
+
+.pricing-img {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 1vw;
+}
+.pricing-header {
+  letter-spacing: 0.5vw;
+  font-weight: 600;
+  color: #888;
+  box-sizing: border-box;
+}
+.pricing-features {
+  margin: 2vw 0px 1vw;
+  color: rgb(37, 193, 221);
+  box-sizing: border-box;
+}
+.pricing-features-item {
+  letter-spacing: 0.5vw;
+  font-weight: 600;
+  font-size: 0.5vw;
+  line-height: 1.5;
+  padding: 0.5vw 0;
+  border-top: 0.5vw slategray solid;
+}
+.pricing-features-item:last-child {
+  border-bottom: 0.5vw slategray solid;
+}
+
+ul li {
+  display: inline;
+  flex-direction: column;
+  display: flex;
+}
+.pricing-price {
+  display: block;
+  color: rgb(37, 193, 221);
+  font-size: 1.25vw;
+  font-weight: 700;
+}
+.pricing-button {
+  border: 0.5vw grey solid;
+  border-radius: 10px;
+  color: blue;
+  display: inline-block;
+  padding: 0.5vw 1.4vw;
+  text-decoration: none;
+  margin: 1vw 0;
+  transition: background-color 500ms ease-in-out;
+}
+.pricing-button:hover,
+.pricing-button:focus {
+  background-color: lightblue;
+}
+.pricing-button.is-featured {
+  background-color: lightblue;
+  color: white;
+}
+.pricing-button.is-featured:hover,
+.pricing-button.is-featured:focus {
+  color: white;
+  background-color: lightskyblue;
+}
+@media (min-width: 36vw) {
+  .panel {
+    flex-direction: row;
+    margin: 8vw 0;
+  }
+}
+
+.pricing-plan:last-child {
+  border-right: none;
+  border-bottom: none;
+}

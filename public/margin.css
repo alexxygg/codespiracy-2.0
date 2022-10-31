@@ -1,0 +1,10 @@
+#div #p {
+  width: 300px;
+  background-color: rebeccapurple;
+}
+.marginned {
+  margin: 50px;
+}
+.p {
+  margin: 0;
+}

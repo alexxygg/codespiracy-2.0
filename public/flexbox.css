@@ -1,0 +1,55 @@
+#div {
+  background-color: lightgreen;
+  border: 3px red solid;
+}
+.section {
+  background-color: navy;
+  width: 80%;
+  margin-left: 10%;
+  height: 200px;
+  margin: auto;
+  border: 5px lightblue solid;
+}
+.section #div {
+  width: 40px;
+  height: 40px;
+}
+#flexbox {
+  display: flex;
+}
+#rowreverse {
+  display: flex;
+  flex-direction: row-reverse;
+}
+#column {
+  display: flex;
+  flex-direction: column;
+}
+#columnreverse {
+  display: flex;
+  flex-direction: column-reverse;
+}
+#rowflexstart {
+  display: flex;
+  justify-content: flex-start;
+}
+#rowflexend {
+  display: flex;
+  justify-content: flex-end;
+}
+#rowcenter {
+  display: flex;
+  justify-content: center;
+}
+#rowspacebetween {
+  display: flex;
+  justify-content: space-between;
+}
+#rowspacearound {
+  display: flex;
+  justify-content: space-around;
+}
+#rowspaceevenly {
+  display: flex;
+  justify-content: space-evenly;
+}

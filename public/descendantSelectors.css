@@ -1,0 +1,16 @@
+div  button {
+  background-color: red;
+}
+
+ul a {
+  color: salmon;
+}
+#paragraphs p {
+  background-color: blueviolet;
+}
+
+#paragraphs .first,
+.second,
+.third {
+  color: blue;
+}

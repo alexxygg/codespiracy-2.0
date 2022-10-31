@@ -1,0 +1,131 @@
+.section {
+  width: 142px;
+  height: 350px;
+  background-color: burlywood;
+  border: 5px black solid;
+}
+#container {
+  margin-bottom: 150px;
+}
+#containerlong {
+  width: 50%;
+  height: 175px;
+}
+#container2 {
+  width: 50%;
+  height: 175px;
+}
+#containers {
+  display: flex;
+  height: 400px;
+  width: 80%;
+  margin-left: 10%;
+  justify-content: space-around;
+  align-items: center;
+  background-color: lightcyan;
+}
+#containersnowrap {
+  display: flex;
+  height: 400px;
+  width: 80%;
+  margin-left: 10%;
+  justify-content: space-around;
+  background-color: lightcyan;
+}
+#div {
+  height: 45px;
+  width: 45px;
+  border: 5px red solid;
+  background-color: lightslategray;
+}
+.f,
+.g {
+  background-color: lightgreen;
+}
+
+#rowflexwrapflexstart {
+  display: flex;
+  flex-wrap: wrap;
+}
+#rowflexwrapflexstart2 {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+  height: 175px;
+}
+
+#rowflexwrapflexend {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+#rowflexwrapflexend2 {
+  width: 50%;
+  height: 175px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+#rowflexwrapcenter {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#rowflexwrapcenter2 {
+  width: 50%;
+  height: 175px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#rowflexwrapspacebetween {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#rowflexwrapspacebetween2 {
+  width: 50%;
+  height: 175px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#rowflexwrapspacearound {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+#rowflexwrapspacearound2 {
+  width: 50%;
+  height: 175px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+#rowflexwrapspaceevenly {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+#rowflexwrapspaceevenly2 {
+  width: 50%;
+  height: 175px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+#rowflexwrapreverse {
+  display: flex;
+  flex-wrap: wrap-reverse;
+}
+#rowflexwrapreverse2 {
+  width: 50%;
+  height: 175px;
+  display: flex;
+  flex-wrap: wrap-reverse;
+}

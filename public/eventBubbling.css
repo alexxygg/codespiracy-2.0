@@ -1,0 +1,20 @@
+#divStop,
+#divBubble {
+  background-color: red;
+  width: 60vw;
+  margin-left: 20vw;
+  height: 20vh;
+}
+#sectionStop,
+#sectionBubble {
+  background-color: green;
+  margin-left: 20vw;
+  margin-right: 20vw;
+  height: 11vh;
+  margin-top: 1rem;
+}
+#buttonStop,
+#buttonBubble {
+  background-color: blue;
+  margin-top: 0.2rem;
+}

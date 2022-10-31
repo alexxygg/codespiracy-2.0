@@ -1,0 +1,44 @@
+#poppins100 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+}
+#poppins200 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+}
+#poppins300 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+}
+#poppins400 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+#poppins500 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+#poppins600 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+#poppins700 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+#poppins800 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+}
+#poppins900 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+}
+#section {
+  width: 80%;
+  margin: auto;
+  font-size: 25px;
+}
+#section p {
+  border: 5px lightgreen solid;
+}

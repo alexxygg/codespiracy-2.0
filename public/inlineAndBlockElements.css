@@ -1,0 +1,41 @@
+#div #p,
+.div #p,
+#h3 {
+  background-color: palevioletred;
+}
+#button {
+  background-color: khaki;
+}
+#h2 {
+  display: inline;
+  background-color: slateblue;
+}
+.blocked {
+  display: block;
+}
+
+.neutral {
+  background-color: darkblue;
+  color: white;
+}
+.good {
+  background-color: green;
+  color: white;
+}
+.bad {
+  background-color: red;
+  color: white;
+}
+.normaldivs {
+  background-color: darkgoldenrod;
+  width: 50px;
+  height: 50px;
+  border: 5px black solid;
+}
+.inlineblockdivs {
+  background-color: darkgoldenrod;
+  width: 50px;
+  height: 50px;
+  border: 5px black solid;
+  display: inline-block;
+}

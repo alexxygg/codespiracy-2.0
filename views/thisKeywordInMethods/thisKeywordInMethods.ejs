@@ -1,0 +1,28 @@
+<% layout("./layouts/boilerplate") %>
+
+  <h1>this Keyword in Methods</h1>
+  <p>It allows us to access other properties on the same object.</p>
+  <p>It is commonly used in methods from objects.</p>
+  <p>
+    We can reference properties by using this, since JS automatically assumes
+    that we are referring to the object where we are using the word in.
+  </p>
+  <img src="thisKeywordObject.png" alt="" />
+  <img src="thisKeywordObjectConsole.png" alt="" />
+  <p>
+    The value of 'this' depends on where it is invoked, context is important
+    regarding the function
+  </p>
+  <hr />
+  <h2>Another example</h2>
+  <img src="anotherExampleThisKeyword.png" alt="" />
+  <hr />
+  <p>
+    Here we create a new variable, which is a copy of our first object, but
+    this is referring to the original object, not the copy!
+  </p>
+  <p>
+    Therefore, the copy will not find the values within itself, and since this
+    only works on the object it is used on, it will return empty.
+  </p>
+  <script src="thisKeywordInMethods.js"></script>

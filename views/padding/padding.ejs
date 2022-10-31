@@ -1,0 +1,49 @@
+<% layout("./layouts/boilerplate") %>
+
+  <link rel="stylesheet" href="padding.css" />
+
+  <h1>Padding</h1>
+  <p>
+    It is in between the content and the border, like a package from Amazon,
+    when packaged properly.
+  </p>
+  <p>The h1 has a padding of 30px.</p>
+  <p>
+    The top, left and bottom look evenly spaced out from the text, not on the
+    right because of the amount of content, but this can be fixed by centering
+    the text.
+  </p>
+  <p>
+    The width of the h1 was changed to 200 px to see these changes more
+    clearly. The background-color is red, also for visibility.
+  </p>
+  <p>We can add padding just to one side, two, three or all sides.</p>
+  <p>
+    Here are examples of the shorthands, each title was styled with its
+    corresponding shorthand. They all have a width of 300px.
+  </p>
+  <h3 class="allsides">All sides</h3>
+  <p>To pad all sides, only one value is needed, like this: padding: 10px</p>
+  <h3 class="leftright">Left and Right xxxx</h3>
+  <p>
+    We first enter a value for top and bottom. The second value is for the
+    left and right. Like this: padding: 20px 30px;
+  </p>
+  <p>
+    Or we can leave 0px on the top and bottom, so it looks like this button:
+  </p>
+  <div id="buttonDiv"><button>padding: 0px 20px;</button></div>
+  <h3 class="threevalues">Top, Left and Right, and Bottom</h3>
+  <p>
+    This syntax takes 3 values, the first for the top padding, the second for
+    the left and right paddings, and the the third for the bottom padding.
+  </p>
+  <p>The header has this: padding: 20px 50px 60px;</p>
+  <h3 class="allfour">All 4 sides one by one</h3>
+  <p>These work like the clock, top, right, bottom and left.</p>
+  <p>We used this: padding: 15px 30px 45px 60px;</p>
+  <p>
+    But here is a button to make it easier visually since the header text does
+    not make a good job of showing the content box limits.
+  </p>
+  <div id="buttonDiv"><button class="onebyone">One by one</button></div>

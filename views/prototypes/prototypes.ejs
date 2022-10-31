@@ -1,0 +1,63 @@
+<% layout("./layouts/boilerplate") %>
+
+  <h1>Prototypes</h1>
+  <p>Arrays have many methods we can call, like push(),pop(),etc.</p>
+
+  <p>
+    We can create our own methods by defining functions and using them on our
+    arrays too.
+  </p>
+  <p>Any methods we create are instead stored as functions.</p>
+  <p>
+    Instead of defining every single one of the default functions/methods in
+    each array, they are only referenced from the prototype object!.
+  </p>
+  <p>
+    All of the default methods for an array are saved in __proto__:, also
+    referred to as dunder.
+  </p>
+  <p>We can see all of them with Array.prototype (String.prototype, etc.).</p>
+  <p>
+    We can create our own prototype and then have access to our own functions
+    on all of our elements:
+  </p>
+  <img src="prototypeExampleScreamingMethod.png" alt="" />
+  <img src="prototypeExampleScreamingMethodResult.png" alt="" />
+  <p>We can do the same with the Array.prototype.</p>
+  <p>
+    We can also override existing methods by creating a new function with a
+    name that matches a default method, and use it on any array.
+  </p>
+  <p>
+    "prototype" is the actual object, where "__proto__" is only a reference to
+    it. We shouldn't need to touch the latter, only the object.
+  </p>
+  <h2>OOP (Object Oriented Programming)</h2>
+  <p>
+    It is all about organizing our code, designing and structuring our
+    applications by breaking things up into small pieces that follow distinct
+    patters of objects.
+  </p>
+  <p>These patterns are like recipes for objects.</p>
+
+  <p>For example, we have many types of colors: rgb, rgba, hsl:</p>
+  <ul>
+    <li>
+      <span style="background-color: rgb(244, 54, 23)">rgb:</span>
+      rgb(244,54,23)
+    </li>
+    <li>
+      <span style="background-color: rgba(24, 75, 230, 0.5)">rgba:</span>
+      rgba(24,75,230,0.5)
+    </li>
+    <li><span style="background-color: #568545">Hex rgb:</span> #568545</li>
+    <li>
+      <span style="background-color: hsl(20, 50%, 68%)">hsl:</span>
+      hsl(20,50%,68%)
+    </li>
+  </ul>
+  <p>They are all different formats for colors.</p>
+  <h2>Factory Functions</h2>
+  <p>missing</p>
+  <h2>Constructor Functions</h2>
+  <script src="prototypes.js"></script>

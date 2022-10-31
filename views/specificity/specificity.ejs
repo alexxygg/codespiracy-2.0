@@ -1,0 +1,50 @@
+<% layout("./layouts/boilerplate") %>
+
+  <h1>Specificity</h1>
+  <p>
+    Specificity helps us determine which style will be applied in the end when
+    we have multiple values that we have selected for an element, class or id.
+  </p>
+  <p>
+    Ids will always be more important than 10 classes, a class will always be
+    more important than 50 elements. The numbers don't matter here, as long as
+    there is one of the #id selector, it doesn't matter how specific you are
+    with your classes and elements, and so on.
+  </p>
+  <p>Say we have this HTML.</p>
+  <img src="first.png" alt="" />
+  <p>And this CSS.</p>
+  <p>
+    li { color:orange; } .nav-link { color: magenta; } ul li { color: blue; }
+  </p>
+  <p>
+    In this code, the class would be more specific, so if that one has a color
+    of magenta, it would not matter if he had another CSS style on li{} or ul
+    li{}, this one would win.
+  </p>
+  <p>Or this example:</p>
+  <img src="specificity.png" alt="" />
+
+  <p>WIth this CSS.</p>
+  <p>
+    #submit { color: blue; } .btn { color: pink; } p button.btn { color:
+    purple; }
+  </p>
+  <p>The color would end up being blue!</p>
+  <p>ANd lastly, if there is a tie, like in this example:</p>
+  <img src="./tied.png" alt="" />
+  <p>With this CSS:</p>
+  <p>
+    .about .heading { color: orange; } .about h2.heading { color: pink; }
+    section.about .heading { color: yellow; }
+  </p>
+  <p>
+    It would come down to the order in the list, meaning yellow would be
+    selected.
+  </p>
+  <h2>!important and inline styling.</h2>
+  <p>
+    We can also use these two to override the specificity we would have
+    previously set, but this is bad practice. They are more important than an
+    id, and class and element as a result.
+  </p>

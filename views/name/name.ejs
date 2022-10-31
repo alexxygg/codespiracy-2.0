@@ -1,0 +1,44 @@
+<% layout("./layouts/boilerplate") %>
+
+  <h1>Name Attribute</h1>
+  <p>
+    The name attribute is applied to the input element, it can have any name
+    like a single letter or a word that has something to do with the input. It
+    will show up on the search bar.
+  </p>
+  <p>
+    This attribute is used when submitting forms. The text entered in each
+    field will show up on the search bar when the request is being processed.
+  </p>
+  <p>
+    Here is the first form from the last examples. Submit the form, then look
+    at the search bar and see what you find!
+  </p>
+  <p>
+    The name chosen for username and password were awesome and entry
+    respectively.
+  </p>
+  <hr />
+  <form action="#">
+    <div id="buttonDiv">
+      <label for="username">Please choose a username:
+        <input type="username" placeholder="username" id="username" name="awesome" /></label>
+      <label for="password">Please choose a password:
+        <input type="password" placeholder="password" id="password" name="entry" /></label>
+    </div>
+    <div id="buttonDiv"><button class="btn btn-outline-success" type="">Register</button></div>
+  </form>
+  <hr />
+  <p>This is what came up after entering alexandalex and HardPassword101</p>
+  <p>
+    file:///home/alejandro/courseExercises/courseExercises/fake?awesome=alexandalex&entry=HardPassword101
+  </p>
+  <p>
+    That is the exact route it made to try to find the content, only problem
+    here was that /fake is not a real location, which is why submitting the
+    form fails.
+  </p>
+  <p>
+    It would have been easier to use username and passwords as the names
+    though.
+  </p>

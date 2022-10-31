@@ -1,0 +1,24 @@
+<% layout("./layouts/boilerplate") %>
+
+  <h1>The textarea element</h1>
+  <p>This is not an input, but its very own element.</p>
+  <p>
+    These boxes are used when asking a user for things like feedback,
+    additional notes or specific details.
+  </p>
+  <p>The default row length is 10.</p>
+  <p>The default column height is 30.</p>
+  <label id="aLabel" for="feedback">Any comments, questions or concerns? Send us some feedback!</label>
+  <div id="buttonDiv">
+    <textarea name="feedback" id="feedback" cols="30" rows="10" placeholder="Enter your feedback here."></textarea><br>
+    <button class="btn btn-outline-success">Submit feedback.</button>
+  </div>
+  <hr />
+  <p>This is the same, except the dimensions are reversed.</p>
+  <label id="aLabel" for="feedback">Any comments, questions or concerns? Send us some feedback!</label>
+
+  <div id="buttonDiv">
+    <textarea name="feedback" id="feedback" cols="10" rows="30" placeholder="Enter your feedback here."></textarea><br>
+    <button class="btn btn-outline-success">Submit feedback.</button>
+  </div>
+  <hr />

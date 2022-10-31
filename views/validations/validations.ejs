@@ -1,0 +1,50 @@
+<% layout("./layouts/boilerplate") %>
+
+  <h1>HTML Validations</h1>
+  <p>
+    They help us to make sure the input from user matches a certain pattern.
+  </p>
+  <p>
+    There are many built in validations in HTML, for example the email input
+    type would make sure that there is a @ sign in the text.
+  </p>
+  <p>
+    Also it is worth talking about the required attribute, if entered in the
+    input field, it will not let us submit a form until properly filled out,
+    and can be applied to any input you would logically want to use it on.
+  </p>
+  <p>Here you can submit the form without even entering text.</p>
+  <div id="buttonDiv">
+    <form action="#">
+      <label for="username">Enter a username:</label>
+      <input type="text" name="username" id="username" placeholder="..." />
+      <button class="btn btn-outline-primary">Submit</button>
+    </form>
+  </div>
+  <p>
+    But here we used required, so it will have to be filled before submitting.
+    It will show an alert saying to fill the field first.
+  </p>
+  <div id="buttonDiv">
+    <form action="#">
+      <label for="username">Enter a username:</label>
+      <input type="text" name="username" id="username" placeholder="..." required />
+      <button class="btn btn-outline-primary">Submit</button>
+    </form>
+  </div>
+  <p>
+    Of course we can add things to check for specific patterns, like making
+    sure it is between x and x characters(min and max), that it included a
+    special character,etc.
+  </p>
+  <p>
+    Here we show the input type email with required on, a message tells us to
+    make sure we enter the @ sign if we have not.
+  </p>
+  <div id="buttonDiv">
+    <form action="#">
+      <label for="email">Enter an email:</label>
+      <input type="email" name="email" id="email" placeholder="user@example.com" required />
+      <button class="btn btn-outline-primary">Continue</button>
+    </form>
+  </div>

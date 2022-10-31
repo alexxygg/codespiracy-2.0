@@ -1,0 +1,57 @@
+<% layout("./layouts/boilerplate") %>
+  <h1>Race Registration Form Example</h1>
+  <form action="#" class="form">
+    <div id="buttonDiv" class="pt-4">
+      <label for="first">First Name:
+        <input type="text" required name="first" id="first" />
+      </label>
+      <label for="last">Last Name:
+        <input type="text" id="last" name="last" required />
+      </label>
+      <div> </div>
+
+      <p>Select length of race!</p>
+    </div>
+    <div id="radioOptions">
+      <label for="5km">
+        <input type="radio" id="5km" name="racelenght" required value="5km" />5 kilometers
+      </label>
+
+      <div>
+        <label for="21km">
+          <input type="radio" name="racelenght" id="21km" required value="21km" />21 kilometers (Half Marathon)
+        </label>
+      </div>
+      <div>
+        <label for="42km">
+          <input type="radio" name="racelenght" id="42km" required value="42km" />42 kilometers (Full Marathon)
+        </label>
+      </div>
+    </div>
+    <div>
+      <div id="buttonDiv">
+        <label for="email">Email:
+          <input type="email" name="email" id="email" required />
+        </label>
+        <label for="password">Password:
+          <input type="password" name="password" id="password" required />
+        </label>
+      </div>
+    </div>
+    <div id="buttonDiv">
+      <label for="age">Select your age group:
+        <select name="agegroup" id="agegroup" required>
+          <option value="less18">Under 18.</option>
+          <option value="less25">Between 18 and 25</option>
+          <option value="less40">Between 26 and 40</option>
+          <option value="40ormore">More than 40 years old.</option>
+        </select>
+      </label>
+    </div>
+    <div id="buttonDiv"><button class="btn btn-outline-success mb-4">Register</button></div>
+  </form>
+
+  <p>Example outcome url after completing form:</p>
+  <p>
+    file:///home/alejandro/courseExercises/courseExercises/sdhshjjdshhds?first=s&last=s&racelenght=21km&email=s%40f&password=s&agegroup=less25
+  </p>

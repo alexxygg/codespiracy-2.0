@@ -1,0 +1,28 @@
+<% layout("./layouts/boilerplate") %>
+  <link rel="stylesheet" href="theCascade.css" />
+
+  <h1>The Cascade</h1>
+  <p>
+    This term refers to the order in which things are styled in CSS. The order
+    in which they are declared is important.
+  </p>
+
+  <p>
+    We have changed the color of the h1 header two times, you can see in the
+    code that the blue color is after the red color in order up to down. So
+    that is the color that will be applied.
+  </p>
+  <p>
+    If we had 2 CSS stylesheets, and the h1 color was also styled in the
+    second sheet, that would be the value kept and saved. It would change to
+    red first, then blue, and if say we had applied gold on the second CSS
+    page, it would stay gold.
+  </p>
+  <p>
+    If that second page was listed before this one on the head part of our
+    HTML, it would first be gold, the red, and finally blue.
+  </p>
+  <p>
+    This is the code we used: h1 { color: red; } h1 { color: gold; } h1 {
+    color: blue; }
+  </p>

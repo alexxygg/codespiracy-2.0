@@ -1,0 +1,54 @@
+<% layout("./layouts/boilerplate") %>
+
+  <h1>Static assets in Express.js</h1>
+  <p>This refers to CSS and JS scripts that run in the browser.</p>
+  <p>
+    We need to serve the stylesheets and JS scripts, fonts, images, logos,
+    etc.
+  </p>
+  <p>We can do this with express.js!</p>
+  <p>app.use(), as we've used before, will run every time.</p>
+  <p>We use this method with express.static() inside it.</p>
+  <p>We must pass the folder where our files are to this second method.</p>
+  <p>
+    (We can have multiple folders for each type of file, like one for js and
+    one for css, but it is common to have them grouped in a single folder.)
+  </p>
+  <p>
+    Now we can link our stylesheet in our EJS file, no need for the folder to
+    be included, only the file name.
+  </p>
+  <p>This will apply to every webpage that generates.</p>
+  <p>
+    In this example we use a folder called public, which inside has our
+    app.css stylesheet file!
+  </p>
+  <img src="staticAssetsStyesheetExpress.png" alt="" />
+  <p>
+    We can also use the __dirname method to be able to run our server from
+    anywhere we are in the file system if using the relative file path.
+  </p>
+  <img src="staticAssetsCodeExpress.png" alt="" />
+  <hr />
+  <h2>Bootstrap + Express JS</h2>
+  <hr />
+  <h2>EJS and Partials</h2>
+  <p>We can use templates inside our templates!</p>
+  <p>
+    We can include them when needed to not have to write common code again and
+    again.
+  </p>
+  <p>To do this, we use < %- include("partials/head") %>
+  </p>
+  <p>
+    This tag doesn't allow the HTML to escape, it treats any content files as
+    a string!
+  </p>
+  <p>
+    (If we had a partial template for the head of an HTML inside a folder
+    called partials.)
+  </p>
+  <p>
+    We can use as many partials as we want in order to reuse code, and save
+    time!
+  </p>

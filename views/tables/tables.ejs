@@ -1,0 +1,149 @@
+<% layout("./layouts/boilerplate") %>
+
+  <p>They are structured sets of data.</p>
+  <p>Composed of rows and columns.</p>
+  <p>
+    Used to be used for websites, but now only used for actual data tables.
+  </p>
+  <p>
+    The elements we are using are table, td(table data cell),tr(table row),
+  </p>
+
+  <p>
+    The td elements are the cells going from left to right, or row. In this
+    table, they are the values starting at Rank and ending in % Water.
+  </p>
+  <p>
+    The tr element is used to group all the td elements together. So all the
+    values we just mentioned are inside of tr elements, so are all the cells
+    for Russia data and so on.
+  </p>
+  <p>
+    The th element is used for the headers of each column, they go inside tr
+    elements just like all the other countries. They are in bold by default.
+  </p>
+  <p>
+    The thead element is the table header, in this case we have the th
+    elements inside thead elements. They do not make any changes, but are
+    rather used for styling later with CSS.
+  </p>
+  <p>The tbody element would surround all the td elements.</p>
+  <p>
+    Finally, the tfoot would surround the footer of the table, which we do not
+    need in this example. It can be used if there is a total for each column,
+    like total sq. km of all countries combined,etc.
+  </p>
+  <hr />
+  <table>
+    <thead>
+      <tr>
+        <th>Rank</th>
+        <th>Country</th>
+        <th>Total sq. km</th>
+        <th>Land in sq. km</th>
+        <th>Water in sq. km</th>
+        <th>% Water</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>Russia</td>
+        <td>17,098,246</td>
+        <td>16,378,410</td>
+        <td>719,836</td>
+        <td>4.21</td>
+      </tr>
+
+      <tr>
+        <td>2</td>
+        <td>Canada</td>
+        <td>9,984,670</td>
+        <td>9,093,507</td>
+        <td>891,163</td>
+        <td>8.93</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>China</td>
+        <td>9,596,961</td>
+        <td>9,326,410</td>
+        <td>270,550</td>
+        <td>2.82</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>United States</td>
+        <td>9,525,067</td>
+        <td>9,147,593</td>
+        <td>377,424</td>
+        <td>3.96</td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>Brazil</td>
+        <td>8,515,767</td>
+        <td>8,460,415</td>
+        <td>55,353</td>
+        <td>0.65</td>
+      </tr>
+    </tbody>
+  </table>
+  <hr />
+  <p>
+    In this second table we are making the Total and Land take up 2 columns
+    with the colspan element, it has been set to two.
+  </p>
+  <p>
+    The Country header is taking two spaces, but we used the rowspan element
+    instead!
+  </p>
+  <p>
+    The remaining 4 headers that were separated from Total and Land were taken
+    out of that tr table row and put into their own all together.
+  </p>
+  <table>
+    <tr>
+      <th rowspan="2">Country</th>
+      <th colspan="2">Total</th>
+      <th colspan="2">Land</th>
+    </tr>
+    <tr>
+      <th>sq. km</th>
+      <th>sq. mi</th>
+      <th>sq. km</th>
+      <th>sq. mi</th>
+    </tr>
+    <tr>
+      <td>Russia</td>
+      <td>17,098,246</td>
+      <td>6,601,670</td>
+      <td>16,378,410</td>
+      <td>6,323,740</td>
+    </tr>
+  </table>
+  <hr>
+  <p>One last little table.</p>
+  <table>
+    <thead>
+      <th>Subscription</th>
+      <th>Price</th>
+      <th>Support</th>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Free</td>
+        <td>Free</td>
+        <td>N/A</td>
+      </tr>
+      <tr>
+        <td>Personal</td>
+        <td>$9.99</td>
+        <td>Weekdays</td>
+      </tr>
+      <tr>
+        <td>Business</td>
+        <td>$49.99</td>
+        <td>24/7</td>
+      </tr>
+    </tbody>

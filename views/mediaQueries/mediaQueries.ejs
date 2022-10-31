@@ -1,0 +1,110 @@
+<% layout("./layouts/boilerplate") %>
+
+  <link rel="stylesheet" href="mediaQueries.css" />
+
+  <h1>Media Queries</h1>
+  <p>
+    They allow us to modify our content when certain parameters are met with
+    values like width, device type.
+  </p>
+  <h1>Exact</h1>
+  <p>@media (width: 300px) { h1 { color: blue; } }</p>
+  <p>
+    This is the syntax, and it means the color of the h1 header text will
+    change to blue when the width is exactly 300px.
+  </p>
+  <nav class="nav" id="exact">
+    <ul>
+      <li class="li"><a href="dssd">Home</a></li>
+      <li class="li"><a href="dasa">Content</a></li>
+      <li class="li"><a href="dasa">About</a></li>
+      <li class="li"><a href="dasa">Help</a></li>
+    </ul>
+    <h1>Welcome</h1>
+  </nav>
+  <hr />
+  <h1>min</h1>
+  <p>@media (min-width: 300px) { h1 { color: salmon; } }</p>
+  <p>
+    Here, the h1 text color will be salmon as soon as the width is 300px or
+    more.
+  </p>
+  <nav class="nav" id="min">
+    <ul>
+      <li class="li"><a href="dssd">Home</a></li>
+      <li class="li"><a href="dasa">Content</a></li>
+      <li class="li"><a href="dasa">About</a></li>
+      <li class="li"><a href="dasa">Help</a></li>
+    </ul>
+    <h1>Welcome</h1>
+  </nav>
+  <hr />
+  <h1>max</h1>
+  <p>@media (max-width: 300px) { h1 { color: seagreen; } }</p>
+  <p>Here, it will be green until from 0px until 300px are reached only.</p>
+  <nav class="nav" id="max">
+    <ul>
+      <li class="li"><a href="dssd">Home</a></li>
+      <li class="li"><a href="dasa">Content</a></li>
+      <li class="li"><a href="dasa">About</a></li>
+      <li class="li"><a href="dasa">Help</a></li>
+    </ul>
+    <h1>Welcome</h1>
+  </nav>
+  <hr />
+  <h1>min and max</h1>
+  <p>
+    @media (min-width: 200px) and (max-width: 300px) { #minmax { color:
+    seagreen; } }
+  </p>
+  <p>And here it will become gold if between a width of 200px and 300px.</p>
+  <nav class="nav" id="minmax">
+    <ul>
+      <li class="li"><a href="dssd">Home</a></li>
+      <li class="li"><a href="dasa">Content</a></li>
+      <li class="li"><a href="dasa">About</a></li>
+      <li class="li"><a href="dasa">Help</a></li>
+    </ul>
+    <h1>Welcome</h1>
+  </nav>
+  <hr />
+  <h1>Order</h1>
+  <p>
+    If we want to give a page multiple max or min widths we have to start with
+    the biggest and finish with the smallest, if else, it will cascade and
+    only apply the last rule, since the parameters are the same, and it will
+    only take into account the last value.
+  </p>
+  <p>
+    Here it is set to the colors of the rainbow, but in reverse order when
+    styling the CSS.
+  </p>
+  <p>
+    @media (max-width: 800px) { #rainbow { color: purple; } } @media
+    (max-width: 700px) { #rainbow { color: blue; } } @media (max-width: 600px)
+    { #rainbow { color: green; } } @media (max-width: 500px) { #rainbow {
+    color: yellow; } } @media (max-width: 400px) { #rainbow { color: orange; }
+    } @media (max-width: 300px) { #rainbow { color: red; } }
+  </p>
+  <nav class="nav" id="rainbow">
+    <ul>
+      <li class="li"><a href="dssd">Home</a></li>
+      <li class="li"><a href="dasa">Content</a></li>
+      <li class="li"><a href="dasa">About</a></li>
+      <li class="li"><a href="dasa">Help</a></li>
+    </ul>
+    <h1>Welcome</h1>
+  </nav>
+  <hr />
+  <p>Or we can chain them with and and get the same results.</p>
+  <p>Or order them with min instead of max.</p>
+  <hr />
+  <h1>Orientation</h1>
+  <p>
+    Just another example, when the phone orientation is set to landscape, the
+    background-color will be light-blue for the whole body. About 1175px width
+    on this device.
+  </p>
+  <p>
+    @media (orientation: landscape) { body { background-color: lightblue; } }
+  </p>

@@ -1,0 +1,101 @@
+<% layout("./layouts/boilerplate") %>
+  <link rel="stylesheet" href="pseudoClasses.css" />
+
+  <h1>Pseudo classes</h1>
+  <p>
+    These are action classes, only applied when an action is being performed.
+  </p>
+  <p>They have a colon and a space before the word.</p>
+  <p>
+    This link has the : active feature styled. It will look red when clicked
+    before being released.
+  </p>
+  <div id="buttonDiv"><a href="" class="active">Active link</a></div>
+  <p>The first-child class helps only select the first child in a group</p>
+  <p>
+    Here we have an unordered list, only the first list item has a red
+    background.
+  </p>
+  <p>Here is the code: ul :first-child { background-color: red; }</p>
+  <ul>
+    <li>ab</li>
+    <li>cd</li>
+    <li>ef</li>
+    <li>gh</li>
+  </ul>
+  <p>
+    The hover class helps us style an element as it will appear when the user
+    hovers over it.
+  </p>
+  <p>
+    Here we have a button, the text changes to gold color and the
+    background-color to pink when hovered!
+  </p>
+  <div id="buttonDiv" class="hover">
+    <button class="btn">Hover me!</button>
+  </div>
+  <p>
+    The nth-child class helps choose only a particular child by using the
+    number it would have in order.
+  </p>
+  <p>
+    Here we have many buttons, but only the fourth one will have a different
+    background-color.
+  </p>
+  <p>
+    Here is the code: .childrenList :nth-child(4) { background-color: aqua; }
+  </p>
+  <div id="buttonDiv">
+    <div class="childrenList">
+      <button class="btn">I am a child</button>
+      <button class="btn">I am a child</button>
+      <button class="btn">I am a child</button>
+      <button class="btn">I am a child</button>
+      <button class="btn">I am a child</button>
+      <button class="btn">I am a child</button>
+      <button class="btn">I am a child</button>
+    </div>
+  </div>
+  <p>
+    We can also select every 2nd child, or every 5th, etc. with nth-of-type.
+  </p>
+  <p>
+    Here is the code: .secondChildrenList :nth-of-type(3n) { background-color:
+    gold; }, we are selecting the element at every index 3.
+  </p>
+  <div id="buttonDiv">
+    <div class="secondChildrenList">
+      <button class="btn">I am a child</button>
+      <button class="btn">I am a child</button>
+      <button class="btn">I am a child</button>
+      <button class="btn">I am a child</button>
+      <button class="btn">I am a child</button>
+      <button class="btn">I am a child</button>
+      <button class="btn">I am a child</button>
+    </div>
+  </div>
+  <p>Or odd and even only!</p>
+  <p>.odd :nth-of-type(odd) { background-color: aqua; }</p>
+  <div id="buttonDiv">
+    <div class="odd">
+      <button class="btn">I am a child</button>
+      <button class="btn">I am a child</button>
+      <button class="btn">I am a child</button>
+      <button class="btn">I am a child</button>
+      <button class="btn">I am a child</button>
+      <button class="btn">I am a child</button>
+      <button class="btn">I am a child</button>
+    </div>
+  </div>
+  <p>.even :nth-of-type(even) { background-color: darkblue; }</p>
+  <div id="buttonDiv">
+    <div class="even">
+      <button class="btn">I am a child</button>
+      <button class="btn">I am a child</button>
+      <button class="btn">I am a child</button>
+      <button class="btn">I am a child</button>
+      <button class="btn">I am a child</button>
+      <button class="btn">I am a child</button>
+      <button class="btn">I am a child</button>
+    </div>
+  </div>

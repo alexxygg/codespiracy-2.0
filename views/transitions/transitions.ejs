@@ -1,0 +1,45 @@
+<% layout("./layouts/boilerplate") %>
+
+  <link rel="stylesheet" href="transitions.css" />
+
+  <h1>Transitions</h1>
+  <p>Transitions are really fun!</p>
+  <p>They help us animate our websites and look cool while they're at it.</p>
+  <p>
+    We set the div:hover to do a few things. We have changed the
+    background-color to cyan when hovering on the elements. Also, the boxes
+    will change to circles when hovered since we modified the border-radius to
+    50%. And we added a left-margin of 500px to have it slide to the right
+    when in the content element area, which is wrapping all the divs.
+  </p>
+  <p>
+    The transition: has been set to 3 seconds on the div element, since they
+    are all div boxes anyway.
+  </p>
+  <section class="section">
+    <div class=" div one">ease-in</div>
+    <p>
+      The red one has a transition timing function called ease-in. This one is
+      slower at the beginning.
+    </p>
+    <div class=" div two">ease-out</div>
+    <p>The orange one was set to ease-out. This one is slower at the end.</p>
+    <div class=" div three">steps(5)</div>
+    <p>
+      The yellow one has been set to steps(5). It moves down the 200px in 3
+      seconds like the rest, but in 5 steps.
+    </p>
+    <div class=" div four">linear</div>
+    <p>
+      The green one has a linear function, it goes at the same speed the whole
+      way.
+    </p>
+    <div class=" div five">ease-in-out</div>
+    <p>
+      This one has been set to eas-in-out, so it is fast in the middle, and
+      slow at the beginning and end.
+    </p>
+    <div class=" div six"></div>
+    <div class=" div seven"></div>
+    <div class=" div eight"></div>
+  </section>

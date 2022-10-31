@@ -1,0 +1,110 @@
+<% layout("./layouts/boilerplate") %>
+  <h1>More Input Types</h1>
+  <p>There are several other input types!</p>
+  <hr />
+  <p>
+    The checkbox input type allows us to have a checkbox with text next to it.
+  </p>
+  <div id="buttonDiv">
+    <form action="#">
+      <label for="tos">I agree to the Terms of Service.
+        <input type="checkbox" name="tos" id="tos" /></label>
+    </form>
+
+  </div>
+  <p>Or we can have it come pre-checked too.</p>
+  <div id="buttonDiv">
+    <form action="#">
+      <label for="tos">I agree to the Terms of Service.
+        <input type="checkbox" name="tos" id="tos" checked /></label>
+    </form>
+
+  </div>
+  <p>
+    And even choose the side the text/checkbox is on by putting the text
+    between the label after the input element.
+  </p>
+  <div id="buttonDiv">
+    <form action="#">
+      <label for="tos2">
+        I agree to the Terms of
+        Service.</label>
+      <input type="checkbox" name="tos2" id="tos2" /><button class="btn btn-outline-primary">Agree.</button>
+    </form>
+  </div>
+  <p>
+    As long as the name, id and label names are synced, we only have to click
+    on the text to check the boxes.
+  </p>
+  <p>A button is needed to submit the form.</p>
+  <hr />
+  <h2>Radio input</h2>
+  <p>
+    This one is a selection that works on it's own for each radio. To sync
+    them we need to set the input name of each to the same thing.
+  </p>
+  <div id="buttonDiv">
+    <form action="#">
+      <input type="radio" />
+      <input type="radio" />
+      <input type="radio" />
+    </form>
+  </div>
+
+  <p>Like this to select a size and only one option.</p>
+  <div id="buttonDiv">
+    <form action="#">
+      <label for="S">S</label>
+      <input type="radio" name="sizes" id="s" />
+      <label for="M">M</label>
+      <input type="radio" name="sizes" id="m" />
+      <label for="L">L</label>
+      <input type="radio" name="sizes" id="l" />
+      <button class="btn btn-outline-primary">Select and continue.</button>
+    </form>
+  </div>
+  <p>
+    Except here we missed the very important value for the input, it is what
+    returns the selection to us. If you click the button, the address bar does
+    not show anything regarding the user's selection, but the example below
+    does! This one just says sizes=on.
+  </p>
+  <hr />
+  <div id="buttonDiv">
+    <form action="#">
+      <label for="S">S</label>
+      <input type="radio" name="sizes" id="s" value="s" />
+      <label for="M">M</label>
+      <input type="radio" name="sizes" id="m" value="m" />
+      <label for="L">L</label>
+      <input type="radio" name="sizes" id="l" value="l" />
+      <button class="btn btn-outline-primary">Select and continue.</button>
+    </form>
+  </div>
+  <hr />
+  <h2>Select</h2>
+  <p>
+    Select needs a name and id, which come ready for us to enter information.
+    We also need to call that same name for the label for option to sync them
+    together.
+  </p>
+  <div id="buttonDiv">
+    <form action="#">
+      <label for="diet">Select a diet!</label>
+      <select name="diet" id="diet">
+        <option value="lowcarb">Low-carbohydrate</option>
+        <option value="Vegetarian">Vegetarian</option>
+        <option value="Keto">Keto</option>
+        <option value="glutenfree">Gluten-free</option>
+        <option value="vegan">Vegan</option>
+      </select>
+      <button class="btn btn-outline-primary">Continue</button>
+    </form>
+  </div>
+  <p>All the options must be inside the select elements.</p>
+  <p>We can have any of the option pre-selected by using selected on them.</p>
+  <p>
+    What will show on the browser after submitting the form will be the value
+    we assigned, not the text of the option. For example, the low-carb option
+    would show lowcarb instead of Low-carbohydrate.
+  </p>

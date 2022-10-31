@@ -1,0 +1,87 @@
+h1,
+h2,
+h3,
+h4 {
+  margin-left: 10vw;
+  margin-bottom: 3rem;
+  margin-top: 4rem;
+  width: 80%;
+}
+ul > li,
+ol > li,
+#radioOptions {
+  margin-left: 10vw;
+  margin-bottom: 2rem;
+}
+p {
+  margin-left: 10vw;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  width: 80%;
+  font-size: 20px;
+  text-align: justify;
+}
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  max-width: 98vw;
+  border: 2vw solid rgb(36, 86, 176);
+}
+#randomColorContainer {
+  text-align: center;
+  margin-bottom: 2rem;
+  margin-top: 4rem;
+  font-size: xx-large;
+}
+
+.homePagePic {
+  width: 40%;
+  height: 30vh;
+  display: inline-block;
+  border: 1vw solid darkcyan;
+}
+#homePageBody {
+  background-image: url(./florian-olivo-4hbJ-eymZ1o-unsplash.jpg);
+  background-size: cover;
+  width: 80vw;
+  margin-left: 10vw;
+}
+body,
+#randomRGBdiv {
+  background-color: rgb(24, 26, 27);
+  color: white;
+}
+
+#buttonDiv,
+.buttonDiv,
+#inputDiv,
+#randomRGBbutton,
+#quote {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.form {
+  background-color: gray;
+  width: 80vw;
+  margin-left: 10vw;
+}
+
+#aLabel {
+  margin-left: 10vw;
+}
+
+#museumCandy {
+  max-width: 100vw;
+}
+.newImg {
+  border: none;
+}
+#quote {
+  margin: auto;
+  margin-top: 5vw;
+  color: lightblue;
+}

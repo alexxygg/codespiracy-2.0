@@ -1,0 +1,43 @@
+.div {
+  height: 8vw;
+  width: 8vw;
+  transition: all 3s;
+  text-align: center;
+  margin-bottom: 5vw;
+}
+.section:hover .div {
+  margin-left: 50vw;
+}
+.div:hover {
+  background-color: darkcyan;
+  border-radius: 50%;
+}
+.one {
+  background-color: red;
+  transition-timing-function: ease-in;
+}
+.two {
+  background-color: orange;
+  transition-timing-function: ease-out;
+}
+.three {
+  background-color: yellow;
+  transition-timing-function: steps(5, jump-both);
+}
+.four {
+  background-color: green;
+  transition-timing-function: linear;
+}
+.five {
+  background-color: blue;
+  transition-timing-function: ease-in-out;
+}
+.six {
+  background-color: purple;
+}
+.seven {
+  background-color: brown;
+}
+.eight {
+  background-color: black;
+}

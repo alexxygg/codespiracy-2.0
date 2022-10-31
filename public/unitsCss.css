@@ -1,0 +1,18 @@
+.div {
+  width: 12vw;
+  height: 12vw;
+  background-color: navy;
+  margin-left: 38vw;
+  margin-bottom: 5vw;
+}
+.section {
+  width: 50%;
+  height: 50%;
+  background-color: gold;
+}
+.h4 {
+  height: 25%;
+
+  width: 75%;
+  background-color: aqua;
+}

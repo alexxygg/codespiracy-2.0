@@ -1,0 +1,33 @@
+.div {
+  width: 400px;
+  height: 70px;
+  background-color: firebrick;
+  border: 5px black solid;
+  margin: auto;
+  margin-top: 50px;
+}
+.section:first-of-type div:nth-of-type(1) {
+  transform: rotate(10deg);
+}
+.section:first-of-type div:nth-of-type(2) {
+  transform: scale(1.2);
+}
+.section:first-of-type div:nth-of-type(3) {
+  transform: translateX(100px);
+}
+.section:first-of-type div:nth-of-type(4) {
+  transform: translate(-50px, 30px);
+  margin-bottom: 60px;
+}
+.section:nth-of-type(2) div:nth-of-type(1) {
+  transform: skew(20deg);
+}
+.section:nth-of-type(2) div:nth-of-type(2) {
+  transform: skew(10deg, 5deg);
+}
+.section:nth-of-type(2) div:nth-of-type(3) {
+  transform: rotate(10deg) scale(0.7);
+}
+.section:nth-of-type(2) div:nth-of-type(4) {
+  transform: translateX(-200px) rotate(180deg);
+}
